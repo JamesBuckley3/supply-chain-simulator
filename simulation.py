@@ -106,7 +106,7 @@ class Simulation:
         """
         Increments the simulation time by a random number of minutes.
         """
-        self.sim_time += timedelta(minutes=random.randint(1, 15))
+        self.sim_time += timedelta(minutes=random.randint(1, 10))
 
     def create_order(self):
         """
@@ -380,7 +380,7 @@ class Simulation:
             "timestamp": timestamp,
         }
 
-        if random.random() < supplier.failure_rate + item.failure_rate:
+        if random.random() < supplier.failure_rate * item.failure_rate:
             result_data["failure_reason"] = "unreliable_supplier"
             return result_data
 
@@ -431,8 +431,7 @@ class Simulation:
         Records the current state of inventory and relevant metrics.
 
         Takes a snapshot of all inventory items, including quantity on hand,
-        restock weights, fulfillment weights, and unfulfilled backlog quantities,
-        and appends it to the `inventory_history` log.
+        and unfulfilled backlog quantities, and appends it to the `inventory_history` log.
         """
         self.cur.execute(
             """
@@ -441,9 +440,6 @@ class Simulation:
             """
         )
         for item_id, supplier_id, qty in self.cur.fetchall():
-            item = self.items[item_id]
-            supplier = self.suppliers[supplier_id]
-
             self.cur.execute(
                 """
                 SELECT SUM(QUANTITY - FULFILLED_QUANTITY)
@@ -460,25 +456,23 @@ class Simulation:
                     "item_id": item_id,
                     "supplier_id": supplier_id,
                     "quantity_on_hand": qty,
-                    "restock_weight": item.restock_weight,
-                    "fulfillment_weight": supplier.fulfillment_weight,
                     "backlog_unfulfilled_qty": unfulfilled_units,
                 }
             )
 
     def export_logs(
         self,
-        inventory_filename="inventory_history.csv",
-        fulfillment_filename="fulfillment_log.csv",
+        inventory_filename="data\\inventory_history.csv",
+        fulfillment_filename="data\\fulfillment_log.csv",
     ):
         """
         Exports the collected inventory history and order fulfillment logs to CSV files.
 
         Args:
             inventory_filename (str): The filename for the inventory history CSV.
-                                      Defaults to "inventory_history.csv".
+                                      Defaults to "data\inventory_history.csv".
             fulfillment_filename (str): The filename for the fulfillment log CSV.
-                                        Defaults to "fulfillment_log.csv".
+                                        Defaults to "data\fulfillment_log.csv".
         """
         if self.inventory_history:
             with open(inventory_filename, "w", newline="") as f:
@@ -535,7 +529,7 @@ class Simulation:
 
             event = random.choices(
                 ["create_order", "fulfill_order", "restock", "idle"],
-                weights=[0.2, 0.65, 0.05, 0.1],
+                weights=[0.2, 0.65, 0.1, 0.05],
             )[0]
 
             try:

@@ -1,0 +1,1001 @@
+order_item_id,order_id,item_id,supplier_id,quantity,fulfilled_quantity,fulfilled_date,customer_id,order_date,order_status,item_status,name,category,unit_price,item_failure_rate,item_restock_weight,name_supplier,category_supplier,supplier_failure_rate,supplier_fulfillment_weight,avg_quantity_on_hand,avg_backlog,stockouts,fulfilled_binary
+1,1,30,1,3,3,01/08/2025,110,01/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+2,1,12,7,3,3,01/08/2025,110,01/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+3,2,42,3,1,1,01/08/2025,90,01/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+4,2,5,1,2,2,01/08/2025,90,01/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+5,3,37,5,4,4,01/08/2025,172,01/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+6,4,7,6,5,5,01/08/2025,177,01/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+7,4,45,5,5,5,01/08/2025,177,01/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+8,5,7,6,2,2,02/08/2025,108,01/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+9,5,28,7,2,2,01/08/2025,108,01/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+10,5,24,6,5,5,01/08/2025,108,01/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+11,5,41,7,4,4,01/08/2025,108,01/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+12,6,45,10,4,4,01/08/2025,57,01/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+13,6,16,8,4,4,01/08/2025,57,01/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+14,6,20,9,3,3,01/08/2025,57,01/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+15,6,43,8,3,3,01/08/2025,57,01/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+16,7,13,10,3,3,01/08/2025,138,01/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+17,7,14,6,1,1,01/08/2025,138,01/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+18,8,9,6,2,2,01/08/2025,4,01/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+19,8,18,8,1,1,01/08/2025,4,01/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+20,8,3,1,5,5,01/08/2025,4,01/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+21,8,4,7,4,4,01/08/2025,4,01/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+22,8,36,7,4,4,01/08/2025,4,01/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+23,9,31,10,4,4,01/08/2025,14,01/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+24,9,8,3,5,5,01/08/2025,14,01/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+25,9,5,1,2,2,01/08/2025,14,01/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+26,10,36,7,5,5,01/08/2025,64,01/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+27,11,29,10,1,1,01/08/2025,1,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+28,11,45,5,3,3,01/08/2025,1,01/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+29,11,39,10,4,4,01/08/2025,1,01/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+30,11,31,5,2,2,01/08/2025,1,01/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+31,12,39,10,4,4,01/08/2025,43,01/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+32,12,48,5,4,4,01/08/2025,43,01/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,1
+33,12,37,10,4,4,01/08/2025,43,01/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+34,13,39,5,2,2,01/08/2025,111,01/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walsh-Phillips,Electronics,0.22,0.28,9.927927928,115.3823824,39,1
+35,13,17,2,3,3,01/08/2025,111,01/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+36,13,2,1,2,2,01/08/2025,111,01/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+37,14,17,7,5,5,01/08/2025,23,01/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+38,14,21,3,5,5,01/08/2025,23,01/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+39,14,8,8,4,4,01/08/2025,23,01/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Carlson LLC,Medical,0.33,3.32,17.35535536,115.9139139,1,1
+40,15,49,5,3,3,01/08/2025,93,01/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+41,15,32,2,3,3,01/08/2025,93,01/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+42,15,41,7,4,4,01/08/2025,93,01/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+43,15,29,5,1,1,01/08/2025,93,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+44,15,4,2,2,2,01/08/2025,93,01/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+45,16,42,8,3,3,02/08/2025,37,01/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+46,16,10,10,1,1,02/08/2025,37,01/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walker and Sons,Electronics,0.41,0.14,23.06206206,137.3863864,0,1
+47,16,5,6,5,5,01/08/2025,37,01/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+48,16,31,10,3,3,02/08/2025,37,01/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+49,17,30,1,4,4,01/08/2025,119,01/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+50,17,17,7,5,5,01/08/2025,119,01/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+51,17,43,3,1,1,01/08/2025,119,01/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Miller-Torres,Medical,0.37,4.09,5.900900901,228.5815816,221,1
+52,18,23,7,3,3,01/08/2025,98,01/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+53,18,37,5,5,5,02/08/2025,98,01/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+54,18,19,3,5,5,01/08/2025,98,01/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+55,18,45,10,3,3,02/08/2025,98,01/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+56,18,2,1,5,5,01/08/2025,98,01/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+57,19,48,5,2,2,02/08/2025,76,01/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,1
+58,19,27,7,5,5,02/08/2025,76,01/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+59,19,12,7,2,2,02/08/2025,76,01/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+60,20,36,2,3,3,01/08/2025,58,01/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,"Moore, Bridges and Donaldson",Food,0.14,1.42,4.199199199,260.7717718,314,1
+61,20,24,1,4,4,01/08/2025,58,01/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+62,20,6,7,3,3,01/08/2025,58,01/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+63,20,26,10,3,3,01/08/2025,58,01/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+64,21,32,2,5,5,02/08/2025,10,01/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+65,21,8,3,4,4,02/08/2025,10,01/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+66,21,7,6,3,3,02/08/2025,10,01/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+67,22,29,10,1,1,03/08/2025,95,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+68,22,16,8,5,5,02/08/2025,95,01/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+69,23,8,3,2,2,02/08/2025,71,01/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+70,23,30,1,1,1,01/08/2025,71,01/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+71,24,35,1,1,1,01/08/2025,38,01/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+72,24,17,2,2,2,02/08/2025,38,01/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+73,25,28,7,1,1,01/08/2025,123,01/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+74,25,44,5,3,3,02/08/2025,123,01/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+75,25,7,1,1,1,02/08/2025,123,01/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+76,25,32,2,3,3,02/08/2025,123,01/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+77,26,9,6,1,1,02/08/2025,25,01/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+78,26,36,7,3,3,01/08/2025,25,01/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+79,26,4,7,1,1,01/08/2025,25,01/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+80,27,7,6,1,1,02/08/2025,124,01/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+81,27,23,7,5,5,01/08/2025,124,01/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+82,28,22,2,2,2,02/08/2025,70,01/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+83,28,23,7,1,1,01/08/2025,70,01/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+84,28,1,4,1,1,02/08/2025,70,01/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+85,29,29,10,5,5,01/08/2025,21,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+86,29,43,8,4,4,02/08/2025,21,01/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+87,29,28,7,2,2,02/08/2025,21,01/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+88,30,19,8,5,5,01/08/2025,111,01/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+89,31,4,2,3,3,01/08/2025,102,01/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+90,31,1,9,3,3,02/08/2025,102,01/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+91,31,14,1,1,1,02/08/2025,102,01/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Perez PLC,Clothing,0.32,0.25,22.58458458,154.1411411,1,1
+92,31,20,9,4,4,02/08/2025,102,01/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+93,31,50,3,2,2,01/08/2025,102,01/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+94,32,49,5,2,2,01/08/2025,155,01/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+95,32,42,8,4,4,01/08/2025,155,01/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+96,33,29,5,3,3,02/08/2025,18,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+97,33,41,2,3,3,02/08/2025,18,01/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+98,33,20,9,4,4,02/08/2025,18,01/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+99,33,18,3,1,1,02/08/2025,18,01/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+100,34,44,5,3,3,02/08/2025,25,01/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+101,34,25,1,5,5,02/08/2025,25,01/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+102,34,19,3,3,3,02/08/2025,25,01/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+103,34,17,7,4,4,02/08/2025,25,01/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+104,34,47,5,5,5,02/08/2025,25,01/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+105,35,33,2,2,2,02/08/2025,172,01/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+106,35,24,6,4,4,02/08/2025,172,01/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+107,35,2,1,2,2,03/08/2025,172,01/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+108,35,20,4,2,2,02/08/2025,172,01/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+109,36,9,1,5,5,02/08/2025,87,01/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+110,36,39,5,4,4,02/08/2025,87,01/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walsh-Phillips,Electronics,0.22,0.28,9.927927928,115.3823824,39,1
+111,36,25,1,4,4,02/08/2025,87,01/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+112,36,10,10,2,2,02/08/2025,87,01/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walker and Sons,Electronics,0.41,0.14,23.06206206,137.3863864,0,1
+113,36,11,9,5,5,02/08/2025,87,01/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+114,37,29,10,1,1,02/08/2025,42,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+115,37,33,2,4,4,02/08/2025,42,01/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+116,37,10,10,1,1,03/08/2025,42,01/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walker and Sons,Electronics,0.41,0.14,23.06206206,137.3863864,0,1
+117,38,16,8,2,2,02/08/2025,129,01/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+118,38,25,1,3,3,02/08/2025,129,01/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+119,38,6,2,3,3,02/08/2025,129,01/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+120,39,45,10,4,4,02/08/2025,74,01/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+121,39,9,1,1,1,03/08/2025,74,01/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+122,39,49,5,3,3,02/08/2025,74,01/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+123,39,46,3,2,2,03/08/2025,74,01/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+124,40,30,1,5,5,02/08/2025,108,01/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+125,40,5,1,2,2,02/08/2025,108,01/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+126,40,8,8,4,4,03/08/2025,108,01/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Carlson LLC,Medical,0.33,3.32,17.35535536,115.9139139,1,1
+127,40,32,2,5,5,02/08/2025,108,01/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+128,40,39,10,2,2,02/08/2025,108,01/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+129,41,17,7,1,1,02/08/2025,100,01/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+130,41,48,10,2,2,02/08/2025,100,01/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+131,41,2,1,5,5,03/08/2025,100,01/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+132,42,22,7,4,4,02/08/2025,91,01/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+133,42,42,3,2,2,02/08/2025,91,01/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+134,42,12,2,4,4,02/08/2025,91,01/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+135,42,50,3,3,3,02/08/2025,91,01/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+136,42,44,5,1,1,02/08/2025,91,01/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+137,43,24,1,5,5,02/08/2025,40,01/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+138,43,29,10,4,4,02/08/2025,40,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+139,43,49,10,3,3,02/08/2025,40,01/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+140,43,5,1,1,1,02/08/2025,40,01/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+141,44,12,7,3,3,03/08/2025,19,01/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+142,44,46,3,5,5,02/08/2025,19,01/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+143,44,29,10,3,3,04/08/2025,19,01/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+144,44,6,2,2,2,03/08/2025,19,01/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+145,45,34,4,2,2,03/08/2025,102,01/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+146,45,27,7,1,1,02/08/2025,102,01/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+147,45,50,8,4,4,03/08/2025,102,01/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+148,45,37,10,2,2,03/08/2025,102,01/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+149,46,9,1,5,5,02/08/2025,142,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+150,46,41,2,5,5,02/08/2025,142,02/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+151,46,20,4,2,2,02/08/2025,142,02/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+152,47,30,1,3,3,02/08/2025,107,02/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+153,47,14,6,3,3,02/08/2025,107,02/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+154,47,22,7,2,2,02/08/2025,107,02/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+155,47,39,10,5,5,02/08/2025,107,02/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+156,48,8,3,1,1,03/08/2025,62,02/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+157,48,18,3,3,3,02/08/2025,62,02/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+158,48,29,10,5,5,04/08/2025,62,02/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+159,48,16,8,2,2,02/08/2025,62,02/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+160,49,33,7,1,1,02/08/2025,41,02/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+161,49,30,1,4,4,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+162,49,32,7,2,2,02/08/2025,41,02/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+163,49,20,4,5,5,02/08/2025,41,02/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+164,50,39,10,5,5,04/08/2025,73,02/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+165,50,42,3,1,1,03/08/2025,73,02/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+166,50,44,10,2,2,02/08/2025,73,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+167,50,31,10,3,3,02/08/2025,73,02/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+168,51,33,7,4,4,02/08/2025,131,02/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+169,51,3,6,2,2,03/08/2025,131,02/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+170,51,9,1,3,3,05/08/2025,131,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+171,51,46,8,2,2,02/08/2025,131,02/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+172,52,13,5,4,4,02/08/2025,180,02/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walsh-Phillips,Electronics,0.22,0.28,16.8998999,80.30630631,5,1
+173,53,16,3,1,1,02/08/2025,158,02/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+174,53,4,2,4,4,02/08/2025,158,02/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+175,53,43,8,4,4,03/08/2025,158,02/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+176,53,34,4,2,2,03/08/2025,158,02/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+177,53,15,1,5,5,02/08/2025,158,02/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+178,54,21,8,2,2,03/08/2025,36,02/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+179,54,16,8,3,3,04/08/2025,36,02/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+180,54,1,9,3,3,03/08/2025,36,02/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+181,54,17,2,3,3,05/08/2025,36,02/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+182,55,24,1,2,2,02/08/2025,192,02/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+183,55,27,2,5,5,02/08/2025,192,02/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+184,55,45,10,5,5,02/08/2025,192,02/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+185,55,36,7,1,1,02/08/2025,192,02/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+186,55,31,5,1,1,02/08/2025,192,02/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+187,56,4,7,4,4,02/08/2025,131,02/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+188,56,30,1,5,5,04/08/2025,131,02/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+189,56,9,6,3,3,03/08/2025,131,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+190,56,33,2,4,4,03/08/2025,131,02/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+191,57,50,8,3,3,02/08/2025,105,02/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+192,57,9,6,4,4,02/08/2025,105,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+193,58,12,7,5,5,02/08/2025,90,02/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+194,59,3,6,5,5,02/08/2025,49,02/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+195,60,41,7,5,5,02/08/2025,152,02/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+196,60,44,10,1,1,03/08/2025,152,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+197,61,16,3,4,4,02/08/2025,138,02/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+198,61,15,1,5,5,04/08/2025,138,02/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+199,61,20,9,4,4,03/08/2025,138,02/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+200,61,46,3,4,4,04/08/2025,138,02/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+201,62,4,7,5,5,02/08/2025,186,02/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+202,62,18,3,1,1,02/08/2025,186,02/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+203,63,32,2,1,1,04/08/2025,185,02/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+204,63,12,2,1,1,02/08/2025,185,02/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+205,63,35,6,2,2,03/08/2025,185,02/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Austin Inc,Clothing,0.12,3.08,12.46546547,146.8618619,29,1
+206,63,42,3,1,1,06/08/2025,185,02/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+207,63,4,2,1,1,04/08/2025,185,02/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+208,64,27,7,5,5,03/08/2025,137,02/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+209,64,1,9,1,1,02/08/2025,137,02/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+210,64,2,6,2,2,02/08/2025,137,02/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Austin Inc,Clothing,0.12,3.08,13.88688689,131.6086086,18,1
+211,64,34,4,1,1,02/08/2025,137,02/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+212,64,47,5,2,2,03/08/2025,137,02/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+213,65,37,10,1,1,02/08/2025,104,02/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+214,65,16,3,1,1,02/08/2025,104,02/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+215,65,45,10,4,4,03/08/2025,104,02/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+216,65,15,6,5,5,02/08/2025,104,02/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+217,66,6,7,3,3,03/08/2025,3,02/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+218,66,32,2,5,5,03/08/2025,3,02/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+219,67,25,1,1,1,03/08/2025,62,02/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+220,67,44,10,1,1,03/08/2025,62,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+221,67,35,1,4,4,03/08/2025,62,02/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+222,67,22,2,1,1,02/08/2025,62,02/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+223,67,49,10,5,5,02/08/2025,62,02/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+224,68,32,7,4,4,02/08/2025,70,02/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+225,68,15,1,5,5,03/08/2025,70,02/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+226,68,23,7,1,1,02/08/2025,70,02/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+227,68,36,7,2,2,03/08/2025,70,02/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+228,69,46,8,3,3,02/08/2025,40,02/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+229,69,41,7,1,1,03/08/2025,40,02/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+230,69,10,5,1,1,03/08/2025,40,02/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+231,69,48,10,4,4,02/08/2025,40,02/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+232,70,45,10,3,3,03/08/2025,83,02/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+233,70,13,10,4,4,03/08/2025,83,02/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+234,70,31,5,3,3,03/08/2025,83,02/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+235,70,21,8,3,3,03/08/2025,83,02/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+236,70,12,7,3,3,02/08/2025,83,02/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+237,71,46,3,4,4,03/08/2025,187,02/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+238,71,14,6,2,2,04/08/2025,187,02/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+239,71,29,10,2,2,03/08/2025,187,02/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+240,71,19,8,2,2,03/08/2025,187,02/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+241,72,15,1,4,4,03/08/2025,26,02/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+242,72,33,7,4,4,02/08/2025,26,02/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+243,72,48,10,5,5,03/08/2025,26,02/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+244,73,7,1,2,2,03/08/2025,7,02/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+245,73,19,8,3,3,03/08/2025,7,02/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+246,73,27,7,4,4,03/08/2025,7,02/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+247,73,6,2,5,5,03/08/2025,7,02/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+248,74,44,5,2,2,02/08/2025,88,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+249,75,36,2,4,4,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,"Moore, Bridges and Donaldson",Food,0.14,1.42,4.199199199,260.7717718,314,1
+250,75,28,2,2,2,04/08/2025,41,02/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+251,75,30,6,4,4,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+252,76,18,3,5,5,03/08/2025,55,02/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+253,76,49,5,5,5,04/08/2025,55,02/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+254,77,40,8,5,5,03/08/2025,91,02/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+255,77,12,2,2,2,04/08/2025,91,02/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+256,77,44,10,1,1,05/08/2025,91,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+257,77,46,3,3,3,04/08/2025,91,02/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+258,78,33,7,5,5,03/08/2025,178,02/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+259,78,25,1,5,5,03/08/2025,178,02/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+260,79,33,7,4,4,03/08/2025,99,02/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+261,79,42,8,4,4,03/08/2025,99,02/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+262,79,32,2,1,1,03/08/2025,99,02/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+263,79,27,2,2,2,03/08/2025,99,02/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+264,79,44,10,1,1,04/08/2025,99,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+265,80,4,2,2,2,05/08/2025,193,02/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+266,80,18,3,3,3,05/08/2025,193,02/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+267,80,42,3,4,4,02/08/2025,193,02/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+268,80,9,6,2,2,04/08/2025,193,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+269,81,30,1,3,3,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+270,81,1,4,3,3,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+271,81,28,2,3,3,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+272,81,13,10,1,1,03/08/2025,41,02/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+273,82,9,1,5,5,03/08/2025,123,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+274,83,8,3,4,4,03/08/2025,179,02/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+275,83,28,2,2,2,03/08/2025,179,02/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+276,83,45,10,1,1,03/08/2025,179,02/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+277,84,9,1,2,2,02/08/2025,95,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+278,84,25,1,5,5,03/08/2025,95,02/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+279,84,50,3,5,5,03/08/2025,95,02/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+280,85,47,5,2,2,03/08/2025,32,02/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+281,85,25,6,1,1,03/08/2025,32,02/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Austin Inc,Clothing,0.12,3.08,19.95295295,123.0540541,8,1
+282,85,23,2,5,5,03/08/2025,32,02/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+283,85,28,7,1,1,03/08/2025,32,02/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+284,85,21,8,2,2,02/08/2025,32,02/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+285,86,24,6,1,1,03/08/2025,146,02/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+286,86,35,1,5,5,04/08/2025,146,02/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+287,86,44,5,1,1,04/08/2025,146,02/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+288,86,12,7,2,2,04/08/2025,146,02/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+289,87,40,3,5,5,03/08/2025,138,02/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+290,87,10,5,2,2,03/08/2025,138,02/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+291,87,18,8,4,4,04/08/2025,138,02/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+292,87,6,2,3,3,03/08/2025,138,02/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+293,87,20,9,2,2,03/08/2025,138,02/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+294,88,8,3,1,1,02/08/2025,171,02/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+295,88,1,4,4,4,03/08/2025,171,02/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+296,89,3,6,4,4,04/08/2025,4,02/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+297,89,31,5,2,2,03/08/2025,4,02/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+298,90,50,3,5,5,03/08/2025,120,02/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+299,90,20,9,1,1,03/08/2025,120,02/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+300,90,21,8,2,2,03/08/2025,120,02/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+301,91,41,7,1,1,03/08/2025,139,02/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+302,91,45,10,3,3,03/08/2025,139,02/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+303,91,1,4,2,2,03/08/2025,139,02/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+304,92,7,6,4,4,04/08/2025,198,02/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+305,92,10,5,5,5,03/08/2025,198,02/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+306,92,11,9,2,2,03/08/2025,198,02/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+307,92,29,10,3,3,03/08/2025,198,02/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+308,92,30,6,3,3,04/08/2025,198,02/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+309,93,46,3,2,2,03/08/2025,176,02/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+310,93,45,10,2,2,03/08/2025,176,02/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+311,93,39,5,2,2,03/08/2025,176,02/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walsh-Phillips,Electronics,0.22,0.28,9.927927928,115.3823824,39,1
+312,94,9,6,3,3,03/08/2025,200,02/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+313,94,13,5,5,5,03/08/2025,200,02/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walsh-Phillips,Electronics,0.22,0.28,16.8998999,80.30630631,5,1
+314,95,3,6,1,1,02/08/2025,85,02/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+315,96,45,10,5,5,03/08/2025,187,03/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+316,97,15,1,3,3,03/08/2025,82,03/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+317,97,41,2,2,2,03/08/2025,82,03/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+318,97,37,10,3,3,03/08/2025,82,03/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+319,97,7,1,1,1,04/08/2025,82,03/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+320,97,32,7,4,4,03/08/2025,82,03/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+321,98,14,6,3,3,03/08/2025,26,03/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+322,98,13,10,2,2,04/08/2025,26,03/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+323,98,27,2,1,1,03/08/2025,26,03/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+324,99,6,7,4,4,03/08/2025,44,03/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+325,99,31,10,4,4,03/08/2025,44,03/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+326,99,8,8,1,1,03/08/2025,44,03/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Carlson LLC,Medical,0.33,3.32,17.35535536,115.9139139,1,1
+327,100,17,2,2,2,03/08/2025,113,03/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+328,100,15,1,1,1,03/08/2025,113,03/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+329,100,18,8,5,5,03/08/2025,113,03/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+330,100,37,10,5,5,04/08/2025,113,03/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+331,101,13,5,4,4,03/08/2025,43,03/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walsh-Phillips,Electronics,0.22,0.28,16.8998999,80.30630631,5,1
+332,101,9,1,4,4,03/08/2025,43,03/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+333,102,36,7,1,1,03/08/2025,143,03/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+334,102,21,8,1,1,04/08/2025,143,03/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+335,102,18,8,2,2,03/08/2025,143,03/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+336,102,34,4,5,5,04/08/2025,143,03/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+337,103,3,1,1,1,06/08/2025,156,03/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+338,103,26,10,3,3,05/08/2025,156,03/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+339,103,22,7,1,1,06/08/2025,156,03/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+340,103,45,10,3,3,05/08/2025,156,03/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+341,104,50,8,5,5,03/08/2025,191,03/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+342,104,21,3,2,2,03/08/2025,191,03/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+343,104,18,8,2,2,03/08/2025,191,03/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+344,104,47,10,4,4,03/08/2025,191,03/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walker and Sons,Electronics,0.41,0.14,17.0950951,140.2702703,18,1
+345,105,16,3,4,4,03/08/2025,52,03/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+346,106,15,1,2,2,04/08/2025,147,03/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+347,106,42,8,4,4,03/08/2025,147,03/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+348,107,31,5,2,2,03/08/2025,200,03/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+349,108,49,5,2,2,04/08/2025,67,03/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+350,108,12,7,2,2,04/08/2025,67,03/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+351,108,44,10,4,4,03/08/2025,67,03/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+352,108,22,7,3,3,03/08/2025,67,03/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+353,108,42,8,5,5,04/08/2025,67,03/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+354,109,27,2,3,3,03/08/2025,52,03/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+355,109,37,5,1,1,03/08/2025,52,03/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+356,109,30,6,3,3,03/08/2025,52,03/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+357,110,47,5,3,3,04/08/2025,137,03/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+358,110,24,1,1,1,04/08/2025,137,03/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+359,111,14,1,5,5,04/08/2025,58,03/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Perez PLC,Clothing,0.32,0.25,22.58458458,154.1411411,1,1
+360,111,47,5,1,1,03/08/2025,58,03/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+361,112,22,7,5,5,03/08/2025,36,03/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+362,112,23,7,1,1,03/08/2025,36,03/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+363,113,11,4,4,4,03/08/2025,179,03/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+364,114,1,4,3,3,06/08/2025,67,03/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+365,114,46,3,4,4,05/08/2025,67,03/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+366,114,44,5,4,4,03/08/2025,67,03/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+367,115,33,7,2,2,03/08/2025,165,03/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+368,115,31,5,4,4,03/08/2025,165,03/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+369,116,1,9,3,3,04/08/2025,169,03/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+370,116,22,7,1,1,05/08/2025,169,03/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+371,117,7,1,1,1,05/08/2025,184,03/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+372,117,17,7,2,2,04/08/2025,184,03/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+373,117,40,8,2,2,04/08/2025,184,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+374,117,13,10,1,1,04/08/2025,184,03/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+375,118,8,3,4,4,03/08/2025,163,03/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+376,118,50,3,5,5,03/08/2025,163,03/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+377,118,29,5,5,5,04/08/2025,163,03/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+378,118,30,6,5,5,04/08/2025,163,03/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+379,118,43,8,5,5,04/08/2025,163,03/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+380,119,20,4,2,2,04/08/2025,155,03/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+381,119,45,5,5,5,04/08/2025,155,03/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+382,119,36,7,3,3,04/08/2025,155,03/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+383,119,21,3,2,2,05/08/2025,155,03/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+384,119,46,8,1,1,04/08/2025,155,03/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+385,120,40,3,5,5,03/08/2025,116,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+386,121,40,8,2,2,04/08/2025,65,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+387,121,50,8,5,5,04/08/2025,65,03/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+388,122,17,7,4,4,04/08/2025,72,03/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+389,122,9,1,1,1,04/08/2025,72,03/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+390,122,11,4,3,3,04/08/2025,72,03/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+391,122,38,5,5,5,04/08/2025,72,03/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+392,122,1,9,4,4,04/08/2025,72,03/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+393,123,16,8,4,4,04/08/2025,89,03/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+394,123,42,3,4,4,04/08/2025,89,03/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+395,123,40,8,5,5,05/08/2025,89,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+396,123,3,6,1,1,03/08/2025,89,03/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+397,124,3,1,2,2,04/08/2025,184,03/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+398,124,6,7,5,5,04/08/2025,184,03/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+399,124,5,1,5,5,04/08/2025,184,03/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+400,125,5,1,3,3,06/08/2025,185,03/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+401,125,49,5,3,3,07/08/2025,185,03/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+402,125,48,10,5,5,04/08/2025,185,03/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+403,125,38,5,3,3,05/08/2025,185,03/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+404,125,3,6,4,4,04/08/2025,185,03/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+405,126,19,8,1,1,07/08/2025,101,03/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+406,126,41,2,1,1,03/08/2025,101,03/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+407,126,10,5,1,1,04/08/2025,101,03/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+408,126,20,9,5,5,05/08/2025,101,03/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+409,126,44,5,3,3,05/08/2025,101,03/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+410,127,40,3,1,1,03/08/2025,48,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+411,127,17,2,5,5,03/08/2025,48,03/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+412,128,13,10,4,4,03/08/2025,159,03/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+413,129,15,6,3,3,03/08/2025,81,03/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+414,129,46,8,2,2,04/08/2025,81,03/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+415,130,18,3,5,5,04/08/2025,156,03/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+416,131,48,5,4,4,06/08/2025,134,03/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,1
+417,131,17,7,3,3,04/08/2025,134,03/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+418,131,38,5,5,5,04/08/2025,134,03/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+419,132,37,5,2,2,05/08/2025,12,03/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+420,132,38,5,5,5,04/08/2025,12,03/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+421,133,34,4,3,3,04/08/2025,67,03/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+422,133,26,5,2,2,04/08/2025,67,03/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walsh-Phillips,Electronics,0.22,0.28,24.73173173,121.4834835,1,1
+423,134,10,10,2,2,04/08/2025,106,03/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walker and Sons,Electronics,0.41,0.14,23.06206206,137.3863864,0,1
+424,134,38,10,4,4,05/08/2025,106,03/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walker and Sons,Electronics,0.41,0.14,3.429429429,212.3183183,296,1
+425,134,50,3,2,2,06/08/2025,106,03/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+426,134,12,7,4,4,04/08/2025,106,03/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+427,134,40,3,1,1,05/08/2025,106,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+428,135,39,5,1,1,05/08/2025,122,03/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walsh-Phillips,Electronics,0.22,0.28,9.927927928,115.3823824,39,1
+429,135,3,6,2,2,04/08/2025,122,03/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+430,135,35,1,4,4,05/08/2025,122,03/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+431,135,33,7,3,3,06/08/2025,122,03/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+432,135,49,5,5,5,04/08/2025,122,03/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+433,136,31,5,3,3,05/08/2025,35,03/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+434,136,50,8,3,3,04/08/2025,35,03/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+435,136,15,1,1,1,04/08/2025,35,03/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+436,137,41,7,1,1,04/08/2025,199,03/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+437,137,32,2,5,5,04/08/2025,199,03/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+438,138,34,4,3,3,05/08/2025,154,03/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+439,138,45,5,1,1,04/08/2025,154,03/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+440,138,15,1,1,1,04/08/2025,154,03/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+441,138,40,8,4,4,05/08/2025,154,03/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+442,138,11,9,4,4,04/08/2025,154,03/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+443,139,33,7,3,3,04/08/2025,45,03/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+444,139,7,1,5,5,04/08/2025,45,03/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+445,139,36,7,5,5,05/08/2025,45,03/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+446,139,5,6,4,4,04/08/2025,45,03/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+447,140,21,8,2,2,06/08/2025,46,03/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+448,140,23,2,4,4,04/08/2025,46,03/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+449,140,14,1,2,2,04/08/2025,46,03/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Perez PLC,Clothing,0.32,0.25,22.58458458,154.1411411,1,1
+450,140,37,5,3,3,05/08/2025,46,03/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+451,141,6,7,5,5,04/08/2025,28,03/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+452,142,31,10,4,4,06/08/2025,135,03/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+453,142,35,1,4,4,04/08/2025,135,03/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+454,142,3,1,5,5,04/08/2025,135,03/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+455,142,33,7,3,3,04/08/2025,135,03/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+456,143,38,10,2,2,04/08/2025,54,03/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walker and Sons,Electronics,0.41,0.14,3.429429429,212.3183183,296,1
+457,143,7,6,2,2,08/08/2025,54,03/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+458,143,21,8,4,4,05/08/2025,54,03/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+459,143,24,6,3,3,06/08/2025,54,03/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+460,144,7,6,2,2,09/08/2025,148,03/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+461,144,47,10,4,4,07/08/2025,148,03/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walker and Sons,Electronics,0.41,0.14,17.0950951,140.2702703,18,1
+462,145,31,5,4,4,04/08/2025,190,03/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+463,145,1,9,2,2,04/08/2025,190,03/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+464,146,12,7,4,4,04/08/2025,148,04/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+465,146,50,3,4,4,05/08/2025,148,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+466,146,19,8,4,4,04/08/2025,148,04/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+467,146,23,2,2,2,05/08/2025,148,04/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+468,146,21,8,4,4,04/08/2025,148,04/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+469,147,5,6,5,5,04/08/2025,27,04/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+470,148,49,5,1,1,04/08/2025,102,04/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+471,148,6,7,3,3,05/08/2025,102,04/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+472,148,7,1,2,2,05/08/2025,102,04/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+473,148,17,7,4,4,04/08/2025,102,04/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+474,148,40,3,2,2,05/08/2025,102,04/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+475,149,41,7,3,3,04/08/2025,153,04/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+476,149,48,10,5,5,05/08/2025,153,04/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+477,149,37,5,1,1,04/08/2025,153,04/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+478,149,28,7,3,3,04/08/2025,153,04/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+479,150,20,9,5,5,04/08/2025,126,04/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+480,150,1,4,1,1,07/08/2025,126,04/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+481,150,50,8,2,2,07/08/2025,126,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+482,150,28,7,5,5,04/08/2025,126,04/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+483,151,41,7,5,5,04/08/2025,75,04/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+484,152,12,2,3,3,04/08/2025,137,04/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+485,153,15,1,2,2,05/08/2025,113,04/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+486,154,5,1,3,3,05/08/2025,199,04/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+487,154,35,6,1,1,05/08/2025,199,04/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Austin Inc,Clothing,0.12,3.08,12.46546547,146.8618619,29,1
+488,154,31,5,2,2,05/08/2025,199,04/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+489,154,12,7,4,4,05/08/2025,199,04/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+490,155,3,1,2,2,06/08/2025,134,04/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+491,156,25,1,5,5,06/08/2025,60,04/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+492,156,13,10,1,1,04/08/2025,60,04/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+493,156,34,9,4,4,05/08/2025,60,04/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+494,156,43,8,1,1,05/08/2025,60,04/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+495,156,16,3,2,2,06/08/2025,60,04/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+496,157,21,8,5,5,04/08/2025,57,04/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+497,157,2,1,1,1,04/08/2025,57,04/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+498,158,14,1,4,4,05/08/2025,103,04/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Perez PLC,Clothing,0.32,0.25,22.58458458,154.1411411,1,1
+499,158,47,5,5,5,04/08/2025,103,04/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+500,158,5,6,1,1,05/08/2025,103,04/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+501,158,21,8,1,1,04/08/2025,103,04/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+502,158,31,5,3,3,04/08/2025,103,04/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+503,159,21,3,3,3,06/08/2025,135,04/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+504,160,31,5,5,5,04/08/2025,87,04/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+505,161,16,8,5,5,10/08/2025,158,04/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+506,161,5,1,1,1,04/08/2025,158,04/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+507,161,18,8,4,4,06/08/2025,158,04/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+508,161,50,8,3,3,06/08/2025,158,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+509,161,28,2,3,3,07/08/2025,158,04/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+510,162,44,5,1,1,05/08/2025,60,04/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+511,162,24,1,1,1,04/08/2025,60,04/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+512,163,20,9,4,4,08/08/2025,178,04/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+513,164,19,3,5,5,04/08/2025,44,04/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+514,165,5,6,3,3,04/08/2025,168,04/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+515,166,46,8,3,3,07/08/2025,118,04/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+516,166,2,6,4,4,06/08/2025,118,04/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Austin Inc,Clothing,0.12,3.08,13.88688689,131.6086086,18,1
+517,166,3,1,1,1,10/08/2025,118,04/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+518,166,16,8,3,3,04/08/2025,118,04/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+519,166,34,9,3,3,07/08/2025,118,04/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+520,167,6,7,5,5,06/08/2025,101,04/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+521,167,47,5,4,4,04/08/2025,101,04/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+522,168,49,10,5,5,06/08/2025,48,04/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+523,169,46,8,4,4,08/08/2025,155,04/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+524,169,42,8,2,2,06/08/2025,155,04/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+525,169,24,1,2,2,05/08/2025,155,04/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+526,169,12,2,1,1,04/08/2025,155,04/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+527,170,32,7,4,4,11/08/2025,113,04/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+528,170,45,5,5,5,07/08/2025,113,04/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+529,170,21,8,3,3,06/08/2025,113,04/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+530,170,30,6,5,5,07/08/2025,113,04/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+531,170,16,3,5,5,10/08/2025,113,04/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+532,171,12,2,4,4,05/08/2025,129,04/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+533,172,41,7,5,5,06/08/2025,181,04/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+534,172,24,1,4,4,06/08/2025,181,04/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+535,172,6,7,1,1,07/08/2025,181,04/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,Bennett Ltd,Food,0.02,1.27,20.94394394,93.6966967,7,1
+536,172,34,4,3,3,07/08/2025,181,04/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+537,173,1,9,5,5,05/08/2025,196,04/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+538,173,30,1,5,5,06/08/2025,196,04/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+539,173,32,7,2,2,05/08/2025,196,04/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+540,174,10,5,5,5,05/08/2025,90,04/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+541,175,8,8,3,3,09/08/2025,121,04/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Carlson LLC,Medical,0.33,3.32,17.35535536,115.9139139,1,1
+542,175,45,10,5,5,09/08/2025,121,04/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+543,176,48,5,5,5,05/08/2025,120,04/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,1
+544,177,17,7,5,5,04/08/2025,52,04/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+545,177,5,6,1,1,05/08/2025,52,04/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+546,177,20,4,3,3,05/08/2025,52,04/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+547,178,2,1,5,5,08/08/2025,39,04/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+548,178,22,7,2,2,07/08/2025,39,04/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+549,178,25,1,3,3,04/08/2025,39,04/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+550,179,50,3,1,1,05/08/2025,96,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+551,180,20,4,2,2,07/08/2025,124,04/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+552,180,50,3,4,4,08/08/2025,124,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+553,180,21,8,5,5,05/08/2025,124,04/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Carlson LLC,Medical,0.33,3.32,12.58258258,140.6646647,29,1
+554,180,10,5,1,1,06/08/2025,124,04/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+555,180,7,6,1,1,06/08/2025,124,04/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+556,181,2,6,2,2,06/08/2025,197,04/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Austin Inc,Clothing,0.12,3.08,13.88688689,131.6086086,18,1
+557,181,37,10,2,2,06/08/2025,197,04/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+558,181,49,5,3,3,05/08/2025,197,04/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+559,182,1,4,2,2,04/08/2025,71,04/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+560,183,7,6,1,1,04/08/2025,173,04/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Austin Inc,Clothing,0.12,3.08,19.86586587,143.1701702,5,1
+561,184,24,6,3,3,05/08/2025,158,04/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+562,184,26,10,4,4,05/08/2025,158,04/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+563,184,12,2,1,1,05/08/2025,158,04/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+564,185,11,4,5,5,05/08/2025,123,04/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+565,185,19,3,4,4,06/08/2025,123,04/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+566,185,50,3,3,3,06/08/2025,123,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+567,185,23,2,3,3,06/08/2025,123,04/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+568,186,28,2,2,2,05/08/2025,54,04/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+569,186,37,5,5,5,05/08/2025,54,04/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+570,186,22,7,1,1,04/08/2025,54,04/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+571,186,35,6,3,3,06/08/2025,54,04/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Austin Inc,Clothing,0.12,3.08,12.46546547,146.8618619,29,1
+572,186,45,5,4,4,05/08/2025,54,04/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+573,187,49,5,4,4,06/08/2025,36,04/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+574,187,41,7,4,4,06/08/2025,36,04/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+575,187,1,9,2,2,05/08/2025,36,04/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+576,187,10,5,3,3,05/08/2025,36,04/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+577,187,43,8,5,5,05/08/2025,36,04/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+578,188,9,1,1,1,07/08/2025,131,04/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+579,188,19,8,1,1,05/08/2025,131,04/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+580,188,4,7,1,1,07/08/2025,131,04/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+581,188,24,1,4,4,06/08/2025,131,04/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+582,189,24,1,2,2,05/08/2025,143,04/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+583,189,27,2,1,1,04/08/2025,143,04/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+584,189,10,5,2,2,05/08/2025,143,04/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+585,189,19,8,4,4,05/08/2025,143,04/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+586,190,30,1,4,4,04/08/2025,165,04/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+587,190,45,10,5,5,05/08/2025,165,04/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+588,190,39,10,4,4,05/08/2025,165,04/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+589,190,28,7,2,2,05/08/2025,165,04/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+590,191,49,5,5,5,09/08/2025,188,04/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+591,191,50,3,2,2,08/08/2025,188,04/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+592,191,18,8,1,1,06/08/2025,188,04/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+593,191,30,6,5,5,08/08/2025,188,04/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+594,191,34,4,3,3,08/08/2025,188,04/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+595,192,17,7,3,3,05/08/2025,20,04/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+596,192,9,6,1,1,05/08/2025,20,04/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+597,192,40,3,5,5,06/08/2025,20,04/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+598,193,4,2,4,4,05/08/2025,68,04/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+599,194,39,5,1,1,05/08/2025,153,04/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walsh-Phillips,Electronics,0.22,0.28,9.927927928,115.3823824,39,1
+600,194,41,2,5,5,05/08/2025,153,04/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+601,195,37,10,4,4,07/08/2025,85,04/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+602,195,1,9,4,4,08/08/2025,85,04/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+603,195,33,2,5,5,06/08/2025,85,04/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+604,195,46,3,1,1,07/08/2025,85,04/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+605,196,22,7,1,1,06/08/2025,138,04/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+606,196,44,5,3,3,05/08/2025,138,04/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+607,196,20,9,1,1,05/08/2025,138,04/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+608,197,32,2,5,5,06/08/2025,152,04/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+609,197,25,6,4,4,05/08/2025,152,04/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Austin Inc,Clothing,0.12,3.08,19.95295295,123.0540541,8,1
+610,198,47,5,2,2,07/08/2025,15,05/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+611,198,3,6,5,5,06/08/2025,15,05/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+612,198,26,5,5,5,05/08/2025,15,05/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walsh-Phillips,Electronics,0.22,0.28,24.73173173,121.4834835,1,1
+613,199,1,4,3,3,05/08/2025,180,05/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+614,199,12,2,4,4,06/08/2025,180,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+615,200,7,1,4,4,06/08/2025,152,05/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+616,201,18,3,4,4,06/08/2025,17,05/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Miller-Torres,Medical,0.37,4.09,4.995995996,193.5415415,174,1
+617,202,25,1,1,1,06/08/2025,26,05/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+618,202,50,3,2,2,08/08/2025,26,05/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+619,202,11,4,5,5,09/08/2025,26,05/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+620,202,2,6,4,4,06/08/2025,26,05/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Austin Inc,Clothing,0.12,3.08,13.88688689,131.6086086,18,1
+621,202,32,7,2,2,08/08/2025,26,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+622,203,29,5,5,5,07/08/2025,70,05/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+623,203,27,2,4,4,07/08/2025,70,05/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+624,203,16,3,3,3,06/08/2025,70,05/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+625,203,12,7,4,4,05/08/2025,70,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+626,203,40,3,5,5,06/08/2025,70,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+627,204,40,8,5,5,05/08/2025,136,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+628,205,14,6,5,5,05/08/2025,94,05/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+629,205,28,7,1,1,05/08/2025,94,05/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+630,205,17,2,1,1,05/08/2025,94,05/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+631,206,33,7,5,5,06/08/2025,8,05/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+632,206,8,8,4,4,07/08/2025,8,05/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Carlson LLC,Medical,0.33,3.32,17.35535536,115.9139139,1,1
+633,206,5,1,3,3,08/08/2025,8,05/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+634,206,16,3,1,1,06/08/2025,8,05/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+635,207,14,6,2,2,05/08/2025,112,05/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+636,207,40,8,3,3,06/08/2025,112,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Carlson LLC,Medical,0.33,3.32,25.91891892,119.1801802,0,1
+637,208,16,8,5,5,06/08/2025,110,05/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+638,208,21,3,5,5,08/08/2025,110,05/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+639,209,31,10,2,2,05/08/2025,136,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+640,209,45,5,5,5,05/08/2025,136,05/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+641,209,7,1,4,4,05/08/2025,136,05/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+642,209,29,5,2,2,05/08/2025,136,05/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+643,210,48,5,4,2,18/08/2025,118,05/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0
+644,210,38,5,3,3,07/08/2025,118,05/08/2025,partial - expired,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,0
+645,210,2,6,1,1,05/08/2025,118,05/08/2025,partial - expired,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Austin Inc,Clothing,0.12,3.08,13.88688689,131.6086086,18,0
+646,210,30,1,4,4,10/08/2025,118,05/08/2025,partial - expired,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,0
+647,210,50,8,5,5,15/08/2025,118,05/08/2025,partial - expired,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,0
+648,211,40,3,5,5,05/08/2025,94,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+649,211,3,1,2,2,08/08/2025,94,05/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Perez PLC,Clothing,0.32,0.25,24.98498498,134.042042,1,1
+650,211,24,6,2,2,07/08/2025,94,05/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+651,211,12,2,4,4,07/08/2025,94,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+652,212,29,5,4,4,06/08/2025,96,05/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+653,212,32,7,4,4,06/08/2025,96,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+654,212,33,7,1,1,05/08/2025,96,05/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+655,213,45,5,4,4,05/08/2025,71,05/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+656,214,11,9,2,2,12/08/2025,73,05/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+657,214,40,3,2,2,08/08/2025,73,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+658,214,46,3,2,2,06/08/2025,73,05/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+659,214,35,1,1,1,09/08/2025,73,05/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+660,215,33,7,3,3,08/08/2025,190,05/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+661,215,22,2,5,5,07/08/2025,190,05/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+662,215,42,8,3,3,08/08/2025,190,05/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+663,215,46,3,4,4,07/08/2025,190,05/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+664,215,19,3,2,2,05/08/2025,190,05/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+665,216,40,3,3,3,06/08/2025,7,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+666,216,15,1,5,5,08/08/2025,7,05/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+667,216,29,5,5,5,09/08/2025,7,05/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+668,216,23,2,3,3,05/08/2025,7,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+669,217,44,10,2,2,11/08/2025,138,05/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+670,217,43,8,3,3,06/08/2025,138,05/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+671,217,6,2,3,3,06/08/2025,138,05/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+672,217,33,7,2,2,12/08/2025,138,05/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,Bennett Ltd,Food,0.02,1.27,22.23023023,130.8398398,1,1
+673,218,31,5,5,5,08/08/2025,54,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+674,218,34,9,1,1,05/08/2025,54,05/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+675,218,22,2,4,4,07/08/2025,54,05/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+676,219,27,2,1,1,06/08/2025,171,05/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+677,219,12,2,3,3,06/08/2025,171,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+678,219,32,7,1,1,06/08/2025,171,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+679,220,38,5,3,3,06/08/2025,67,05/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+680,220,4,7,2,2,06/08/2025,67,05/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+681,221,27,2,3,3,05/08/2025,70,05/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+682,221,41,7,5,5,05/08/2025,70,05/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+683,221,23,2,5,5,05/08/2025,70,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+684,222,10,10,3,3,06/08/2025,149,05/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walker and Sons,Electronics,0.41,0.14,23.06206206,137.3863864,0,1
+685,222,1,9,4,4,05/08/2025,149,05/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+686,222,9,6,2,2,06/08/2025,149,05/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+687,223,31,10,3,3,05/08/2025,34,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+688,224,34,9,1,1,05/08/2025,114,05/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+689,224,49,5,2,2,06/08/2025,114,05/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+690,224,22,2,2,2,06/08/2025,114,05/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+691,224,12,2,3,3,05/08/2025,114,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+692,224,46,3,2,2,06/08/2025,114,05/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+693,225,49,5,1,1,07/08/2025,171,05/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+694,226,38,5,5,5,09/08/2025,192,05/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+695,226,23,2,1,1,09/08/2025,192,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+696,226,11,4,5,5,09/08/2025,192,05/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+697,227,14,6,3,3,07/08/2025,186,05/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+698,228,12,7,4,4,06/08/2025,173,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+699,229,9,6,5,5,07/08/2025,29,05/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+700,229,32,2,1,1,08/08/2025,29,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+701,229,49,10,4,4,07/08/2025,29,05/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+702,229,24,1,4,4,06/08/2025,29,05/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+703,229,46,8,4,4,06/08/2025,29,05/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+704,230,44,10,1,1,06/08/2025,18,05/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+705,230,24,6,4,4,07/08/2025,18,05/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,1
+706,230,12,2,1,1,08/08/2025,18,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+707,230,1,4,4,4,05/08/2025,18,05/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+708,231,50,8,4,4,06/08/2025,20,05/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+709,231,32,7,5,5,05/08/2025,20,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+710,231,30,6,5,5,06/08/2025,20,05/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+711,231,13,5,1,1,06/08/2025,20,05/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walsh-Phillips,Electronics,0.22,0.28,16.8998999,80.30630631,5,1
+712,231,19,8,1,1,07/08/2025,20,05/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+713,232,46,8,2,2,07/08/2025,169,05/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+714,232,11,9,4,4,07/08/2025,169,05/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+715,232,32,7,1,1,07/08/2025,169,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+716,233,30,6,5,5,05/08/2025,84,05/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+717,234,28,2,5,5,09/08/2025,77,05/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+718,234,13,5,3,3,06/08/2025,77,05/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walsh-Phillips,Electronics,0.22,0.28,16.8998999,80.30630631,5,1
+719,234,32,7,1,1,08/08/2025,77,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+720,235,28,7,5,5,06/08/2025,136,05/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+721,235,14,6,4,4,05/08/2025,136,05/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+722,235,23,7,2,2,06/08/2025,136,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+723,235,5,6,4,4,06/08/2025,136,05/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+724,236,20,9,5,5,06/08/2025,8,05/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+725,236,30,6,4,4,06/08/2025,8,05/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+726,237,27,7,5,5,08/08/2025,71,05/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+727,237,17,7,1,1,06/08/2025,71,05/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+728,237,38,10,5,5,06/08/2025,71,05/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walker and Sons,Electronics,0.41,0.14,3.429429429,212.3183183,296,1
+729,237,4,7,4,4,06/08/2025,71,05/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+730,238,45,5,3,3,05/08/2025,190,05/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+731,239,20,4,4,4,06/08/2025,194,05/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+732,239,14,6,4,4,05/08/2025,194,05/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+733,240,21,3,2,2,05/08/2025,52,05/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+734,240,37,5,5,5,06/08/2025,52,05/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+735,240,6,2,5,5,07/08/2025,52,05/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+736,241,26,5,1,1,05/08/2025,95,05/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walsh-Phillips,Electronics,0.22,0.28,24.73173173,121.4834835,1,1
+737,241,25,1,5,5,06/08/2025,95,05/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+738,242,4,7,5,5,05/08/2025,180,05/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+739,242,26,10,2,2,05/08/2025,180,05/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+740,243,40,3,3,3,16/08/2025,68,05/08/2025,fulfilled,Fulfilled,Traditional,Medical,14.64,0.07,5.62,Miller-Torres,Medical,0.37,4.09,24.51951952,134.5065065,0,1
+741,243,29,10,1,1,15/08/2025,68,05/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walker and Sons,Electronics,0.41,0.14,25.12412412,129.6886887,0,1
+742,244,31,5,1,1,07/08/2025,86,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+743,244,23,7,5,5,06/08/2025,86,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+744,245,11,9,4,4,08/08/2025,46,05/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+745,245,33,2,1,1,06/08/2025,46,05/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+746,245,32,7,5,5,06/08/2025,46,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+747,246,3,6,3,3,06/08/2025,30,05/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+748,246,9,6,3,3,07/08/2025,30,05/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+749,246,32,7,5,5,07/08/2025,30,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+750,247,31,10,2,2,07/08/2025,47,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+751,248,19,3,5,5,06/08/2025,24,05/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+752,248,12,7,5,5,06/08/2025,24,05/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+753,249,46,8,5,5,07/08/2025,21,05/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+754,249,43,3,3,3,07/08/2025,21,05/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Miller-Torres,Medical,0.37,4.09,5.900900901,228.5815816,221,1
+755,249,31,5,5,5,06/08/2025,21,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+756,249,30,6,3,3,08/08/2025,21,05/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+757,250,21,3,5,5,06/08/2025,13,05/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+758,250,4,7,1,1,07/08/2025,13,05/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+759,250,48,10,3,3,13/08/2025,13,05/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+760,251,19,3,3,3,06/08/2025,200,05/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+761,251,42,8,4,4,07/08/2025,200,05/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+762,251,49,10,5,5,08/08/2025,200,05/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+763,251,10,5,3,3,06/08/2025,200,05/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+764,252,30,1,4,4,06/08/2025,132,05/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+765,252,44,5,3,3,07/08/2025,132,05/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+766,252,15,6,4,4,06/08/2025,132,05/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+767,253,17,2,1,1,09/08/2025,170,05/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+768,253,23,7,2,2,09/08/2025,170,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+769,253,38,5,4,4,06/08/2025,170,05/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+770,253,6,2,1,1,08/08/2025,170,05/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+771,253,50,8,3,3,09/08/2025,170,05/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+772,254,11,9,4,4,06/08/2025,30,05/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+773,255,2,6,2,2,06/08/2025,5,05/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Austin Inc,Clothing,0.12,3.08,13.88688689,131.6086086,18,1
+774,255,14,1,4,4,06/08/2025,5,05/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Perez PLC,Clothing,0.32,0.25,22.58458458,154.1411411,1,1
+775,256,10,5,2,2,07/08/2025,78,05/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+776,256,31,5,4,4,07/08/2025,78,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+777,256,28,7,4,4,06/08/2025,78,05/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+778,256,2,1,4,4,06/08/2025,78,05/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+779,257,41,7,4,4,06/08/2025,3,05/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+780,258,31,10,2,2,08/08/2025,186,05/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walker and Sons,Electronics,0.41,0.14,3.006006006,317.006006,369,1
+781,258,23,2,5,5,07/08/2025,186,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+782,259,27,7,4,4,07/08/2025,76,05/08/2025,partial - expired,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,0
+783,259,44,5,5,5,06/08/2025,76,05/08/2025,partial - expired,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,0
+784,259,42,3,3,3,07/08/2025,76,05/08/2025,partial - expired,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,0
+785,259,48,5,4,3,17/08/2025,76,05/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0
+786,260,32,2,5,5,11/08/2025,41,05/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+787,260,7,1,1,1,07/08/2025,41,05/08/2025,fulfilled,Fulfilled,Left,Clothing,49.33,0.43,5.21,Perez PLC,Clothing,0.32,0.25,20.78478478,170.4314314,12,1
+788,260,27,7,3,3,07/08/2025,41,05/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+789,260,20,9,2,2,11/08/2025,41,05/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+790,260,16,3,5,5,06/08/2025,41,05/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+791,261,17,2,5,5,07/08/2025,58,05/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+792,261,22,7,2,2,08/08/2025,58,05/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+793,261,23,2,1,1,09/08/2025,58,05/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+794,261,50,8,4,4,12/08/2025,58,05/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+795,262,9,6,4,4,08/08/2025,94,05/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+796,262,8,3,2,2,07/08/2025,94,05/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+797,262,13,10,3,3,08/08/2025,94,05/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+798,263,47,10,2,2,06/08/2025,86,05/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walker and Sons,Electronics,0.41,0.14,17.0950951,140.2702703,18,1
+799,263,48,5,5,5,06/08/2025,86,05/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,1
+800,263,9,6,5,5,06/08/2025,86,05/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,1
+801,263,34,9,2,2,06/08/2025,86,05/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+802,264,17,7,5,5,10/08/2025,139,05/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+803,264,16,3,1,1,07/08/2025,139,05/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+804,264,50,8,3,3,09/08/2025,139,05/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+805,264,20,9,1,1,11/08/2025,139,05/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+806,264,47,5,1,1,06/08/2025,139,05/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+807,265,26,10,3,3,08/08/2025,174,06/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+808,265,38,10,4,4,13/08/2025,174,06/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walker and Sons,Electronics,0.41,0.14,3.429429429,212.3183183,296,1
+809,265,36,7,4,4,12/08/2025,174,06/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+810,265,34,9,2,2,09/08/2025,174,06/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+811,265,50,3,5,5,15/08/2025,174,06/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+812,266,19,8,3,3,10/08/2025,95,06/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Carlson LLC,Medical,0.33,3.32,6.943943944,155.8548549,108,1
+813,266,3,6,3,3,11/08/2025,95,06/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+814,266,34,9,4,4,11/08/2025,95,06/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+815,266,10,5,2,2,10/08/2025,95,06/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+816,266,8,3,5,5,07/08/2025,95,06/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+817,267,14,6,1,1,06/08/2025,79,06/08/2025,fulfilled,Fulfilled,Civil,Clothing,7.98,0.46,3.45,Austin Inc,Clothing,0.12,3.08,20.37237237,90.08608609,10,1
+818,267,12,2,5,5,06/08/2025,79,06/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.63963964,128.1301301,8,1
+819,267,48,10,1,1,06/08/2025,79,06/08/2025,fulfilled,Fulfilled,Agent,Electronics,34.35,0.27,0.19,Walker and Sons,Electronics,0.41,0.14,0.332332332,884.9449449,851,1
+820,268,27,2,4,4,06/08/2025,160,06/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+821,268,25,6,1,1,08/08/2025,160,06/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Austin Inc,Clothing,0.12,3.08,19.95295295,123.0540541,8,1
+822,268,15,1,1,1,07/08/2025,160,06/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Perez PLC,Clothing,0.32,0.25,25.68668669,106.5085085,0,1
+823,268,26,10,5,5,07/08/2025,160,06/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+824,268,22,2,5,5,06/08/2025,160,06/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+825,269,37,10,5,5,07/08/2025,159,06/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+826,269,49,5,1,1,06/08/2025,159,06/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+827,269,4,2,1,1,06/08/2025,159,06/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+828,269,34,9,2,2,09/08/2025,159,06/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+829,269,13,5,5,5,06/08/2025,159,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walsh-Phillips,Electronics,0.22,0.28,16.8998999,80.30630631,5,1
+830,270,21,3,3,3,08/08/2025,137,06/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+831,270,26,10,2,2,11/08/2025,137,06/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+832,270,38,10,1,1,09/08/2025,137,06/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walker and Sons,Electronics,0.41,0.14,3.429429429,212.3183183,296,1
+833,270,3,6,4,4,09/08/2025,137,06/08/2025,fulfilled,Fulfilled,Throw,Clothing,32.17,0.41,4.41,Austin Inc,Clothing,0.12,3.08,23.48048048,120.4314314,1,1
+834,270,32,7,1,1,07/08/2025,137,06/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+835,271,17,2,2,2,07/08/2025,37,06/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+836,271,50,8,4,4,07/08/2025,37,06/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+837,272,2,1,3,3,07/08/2025,84,06/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+838,272,46,8,1,1,06/08/2025,84,06/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+839,273,25,1,2,2,07/08/2025,83,06/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+840,273,8,3,4,4,10/08/2025,83,06/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+841,273,4,7,1,1,08/08/2025,83,06/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+842,274,27,2,1,1,08/08/2025,119,06/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+843,274,5,6,5,5,08/08/2025,119,06/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+844,274,31,5,2,2,08/08/2025,119,06/08/2025,fulfilled,Fulfilled,During,Electronics,8.85,0.25,0.51,Walsh-Phillips,Electronics,0.22,0.28,6.142142142,181.1401401,169,1
+845,274,2,1,3,3,08/08/2025,119,06/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+846,274,41,7,4,4,08/08/2025,119,06/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+847,275,39,10,3,3,06/08/2025,124,06/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walker and Sons,Electronics,0.41,0.14,10.68868869,115.7837838,40,1
+848,275,17,2,5,5,11/08/2025,124,06/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,"Moore, Bridges and Donaldson",Food,0.14,1.42,26.15915916,114.5605606,0,1
+849,275,44,10,1,1,13/08/2025,124,06/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+850,276,42,8,1,1,07/08/2025,178,06/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+851,276,1,4,2,2,07/08/2025,178,06/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+852,277,35,1,4,4,07/08/2025,167,06/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Perez PLC,Clothing,0.32,0.25,17.60660661,113.4644645,3,1
+853,278,46,8,1,1,08/08/2025,158,06/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,1
+854,278,15,6,4,4,07/08/2025,158,06/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+855,278,32,2,1,1,06/08/2025,158,06/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+856,279,33,2,1,1,11/08/2025,72,06/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+857,279,32,2,1,1,06/08/2025,72,06/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+858,279,11,4,3,3,10/08/2025,72,06/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+859,279,36,2,5,5,08/08/2025,72,06/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,"Moore, Bridges and Donaldson",Food,0.14,1.42,4.199199199,260.7717718,314,1
+860,279,13,10,2,2,07/08/2025,72,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+861,280,48,5,4,2,08/08/2025,147,06/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0
+862,281,4,2,1,1,06/08/2025,62,06/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+863,281,22,7,1,1,08/08/2025,62,06/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+864,281,34,9,5,5,07/08/2025,62,06/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+865,282,25,6,1,1,06/08/2025,16,06/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Austin Inc,Clothing,0.12,3.08,19.95295295,123.0540541,8,1
+866,283,20,9,1,1,08/08/2025,114,06/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+867,284,30,6,5,5,07/08/2025,167,06/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Austin Inc,Clothing,0.12,3.08,24.01701702,140.3783784,0,1
+868,285,46,3,5,5,09/08/2025,4,06/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+869,285,5,6,3,3,06/08/2025,4,06/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Austin Inc,Clothing,0.12,3.08,24.84484484,138.5415415,0,1
+870,285,38,10,4,4,07/08/2025,4,06/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walker and Sons,Electronics,0.41,0.14,3.429429429,212.3183183,296,1
+871,285,13,10,2,2,07/08/2025,4,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+872,285,37,5,2,2,06/08/2025,4,06/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walsh-Phillips,Electronics,0.22,0.28,13.36236236,113.951952,5,1
+873,286,28,7,5,5,06/08/2025,80,06/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,Bennett Ltd,Food,0.02,1.27,20.32832833,117.3333333,1,1
+874,286,33,2,2,2,09/08/2025,80,06/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+875,286,42,8,3,3,08/08/2025,80,06/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+876,286,49,10,3,3,08/08/2025,80,06/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+877,286,23,7,1,1,13/08/2025,80,06/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+878,287,41,7,1,1,06/08/2025,113,06/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,Bennett Ltd,Food,0.02,1.27,20.73573574,108.8268268,1,1
+879,287,38,5,2,2,06/08/2025,113,06/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+880,288,13,10,3,3,08/08/2025,34,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+881,288,35,6,5,5,07/08/2025,34,06/08/2025,fulfilled,Fulfilled,Bit,Clothing,22.95,0.34,2.3,Austin Inc,Clothing,0.12,3.08,12.46546547,146.8618619,29,1
+882,289,10,5,3,3,06/08/2025,138,06/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,1
+883,289,21,3,5,5,09/08/2025,138,06/08/2025,fulfilled,Fulfilled,Hard,Medical,31.81,0.24,1.58,Miller-Torres,Medical,0.37,4.09,9.394394394,163.6266266,36,1
+884,289,16,8,2,2,06/08/2025,138,06/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+885,290,42,3,3,3,07/08/2025,60,06/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+886,290,5,1,3,3,08/08/2025,60,06/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+887,290,23,2,1,1,08/08/2025,60,06/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+888,291,13,10,2,2,08/08/2025,10,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+889,291,22,2,5,5,09/08/2025,10,06/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,"Moore, Bridges and Donaldson",Food,0.14,1.42,20.26926927,130.8918919,13,1
+890,291,44,10,1,1,08/08/2025,10,06/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+891,291,17,7,3,3,06/08/2025,10,06/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+892,291,20,9,4,4,09/08/2025,10,06/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+893,292,37,10,1,1,09/08/2025,28,06/08/2025,fulfilled,Fulfilled,Style,Electronics,31.47,0.12,1.4,Walker and Sons,Electronics,0.41,0.14,13.28828829,115.2632633,11,1
+894,292,29,5,1,1,09/08/2025,28,06/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+895,292,41,2,1,1,06/08/2025,28,06/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+896,293,42,8,4,4,12/08/2025,24,06/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Carlson LLC,Medical,0.33,3.32,13.85785786,121.7127127,32,1
+897,293,30,1,4,4,08/08/2025,24,06/08/2025,fulfilled,Fulfilled,Source,Clothing,15.78,0.13,3.45,Perez PLC,Clothing,0.32,0.25,23.56556557,115.5995996,0,1
+898,293,23,2,2,2,13/08/2025,24,06/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+899,294,49,5,5,5,06/08/2025,95,06/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+900,295,46,3,3,3,07/08/2025,65,06/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+901,296,44,5,4,4,07/08/2025,183,06/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+902,297,1,9,2,2,07/08/2025,108,06/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+903,298,15,6,1,1,09/08/2025,55,06/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+904,298,5,1,2,2,11/08/2025,55,06/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+905,298,43,8,3,3,08/08/2025,55,06/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+906,298,18,8,1,1,11/08/2025,55,06/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+907,299,38,5,5,5,07/08/2025,5,06/08/2025,fulfilled,Fulfilled,Agreement,Electronics,36.85,0.04,0.5,Walsh-Phillips,Electronics,0.22,0.28,3.459459459,276.8618619,343,1
+908,299,29,5,2,2,07/08/2025,5,06/08/2025,fulfilled,Fulfilled,Know,Electronics,46.81,0.44,5.01,Walsh-Phillips,Electronics,0.22,0.28,21.6046046,139.6786787,8,1
+909,299,25,1,5,5,09/08/2025,5,06/08/2025,fulfilled,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,1
+910,299,33,2,3,3,07/08/2025,5,06/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+911,299,41,2,4,4,07/08/2025,5,06/08/2025,fulfilled,Fulfilled,Ready,Food,30.93,0.13,2.89,"Moore, Bridges and Donaldson",Food,0.14,1.42,14.86186186,133.2972973,25,1
+912,300,9,1,5,5,08/08/2025,37,06/08/2025,fulfilled,Fulfilled,Various,Clothing,20.99,0.34,4.24,Perez PLC,Clothing,0.32,0.25,24.56656657,141.5555556,2,1
+913,300,6,2,2,2,07/08/2025,37,06/08/2025,fulfilled,Fulfilled,Risk,Food,13.65,0.04,4,"Moore, Bridges and Donaldson",Food,0.14,1.42,22.82382382,131.2392392,4,1
+914,301,20,4,4,4,11/08/2025,186,06/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Young PLC,Hardware,0.45,0.61,6.512512513,204.6266266,198,1
+915,301,11,4,5,5,09/08/2025,186,06/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+916,301,47,5,3,3,10/08/2025,186,06/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+917,301,13,10,5,5,12/08/2025,186,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+918,302,32,7,3,3,10/08/2025,129,06/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,Bennett Ltd,Food,0.02,1.27,20.10610611,109.3263263,5,1
+919,302,26,10,4,4,07/08/2025,129,06/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walker and Sons,Electronics,0.41,0.14,25.17617618,100.6666667,0,1
+920,302,27,7,5,5,11/08/2025,129,06/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+921,303,17,7,5,5,08/08/2025,196,06/08/2025,fulfilled,Fulfilled,How,Food,16.82,0.3,5.4,Bennett Ltd,Food,0.02,1.27,23.21021021,112.993994,1,1
+922,303,50,8,3,3,06/08/2025,196,06/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,1
+923,303,49,5,4,4,08/08/2025,196,06/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walsh-Phillips,Electronics,0.22,0.28,13.5985986,143.8708709,15,1
+924,303,47,10,2,2,08/08/2025,196,06/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walker and Sons,Electronics,0.41,0.14,17.0950951,140.2702703,18,1
+925,304,10,5,4,4,08/08/2025,147,06/08/2025,partial - expired,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walsh-Phillips,Electronics,0.22,0.28,23.77377377,143.4924925,0,0
+926,304,18,8,1,1,11/08/2025,147,06/08/2025,partial - expired,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,0
+927,304,48,5,4,1,06/08/2025,147,06/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0
+928,305,34,9,2,2,09/08/2025,199,06/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Greene Ltd,Hardware,0.12,3.58,23.1981982,128.0540541,2,1
+929,305,27,2,3,3,07/08/2025,199,06/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,"Moore, Bridges and Donaldson",Food,0.14,1.42,9.665665666,130.7347347,30,1
+930,305,42,3,2,2,10/08/2025,199,06/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+931,305,19,3,4,4,10/08/2025,199,06/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+932,306,49,10,4,4,11/08/2025,16,06/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+933,306,13,10,5,5,11/08/2025,16,06/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+934,307,5,1,4,4,09/08/2025,32,06/08/2025,fulfilled,Fulfilled,Party,Clothing,42.32,0.31,5.18,Perez PLC,Clothing,0.32,0.25,25.07907908,149.6746747,1,1
+935,307,22,7,1,1,08/08/2025,32,06/08/2025,fulfilled,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,1
+936,307,2,1,1,1,10/08/2025,32,06/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+937,308,18,8,5,5,10/08/2025,32,06/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+938,308,45,10,5,5,09/08/2025,32,06/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walker and Sons,Electronics,0.41,0.14,19.27027027,119.0800801,3,1
+939,308,49,10,2,2,10/08/2025,32,06/08/2025,fulfilled,Fulfilled,Court,Electronics,46.69,0.43,1.08,Walker and Sons,Electronics,0.41,0.14,9.322322322,146.2462462,20,1
+940,308,16,3,3,3,06/08/2025,32,06/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Miller-Torres,Medical,0.37,4.09,22.64264264,141.2132132,4,1
+941,308,24,1,3,3,08/08/2025,32,06/08/2025,fulfilled,Fulfilled,However,Clothing,24.56,0.23,5.73,Perez PLC,Clothing,0.32,0.25,25.56456456,121.2072072,0,1
+942,309,20,9,2,2,07/08/2025,128,06/08/2025,fulfilled,Fulfilled,Box,Hardware,40.64,0.22,0.47,Greene Ltd,Hardware,0.12,3.58,3.173173173,251.7877878,342,1
+943,310,11,9,4,4,07/08/2025,184,06/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+944,311,46,8,2,2,07/08/2025,88,06/08/2025,partial - expired,Fulfilled,Face,Medical,13.26,0.24,5.26,Carlson LLC,Medical,0.33,3.32,23.31931932,115.1211211,0,0
+945,311,48,5,3,0,NA,88,06/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0
+946,311,47,5,3,3,10/08/2025,88,06/08/2025,partial - expired,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,0
+947,311,25,1,1,1,07/08/2025,88,06/08/2025,partial - expired,Fulfilled,Choose,Clothing,48.73,0.38,3.1,Perez PLC,Clothing,0.32,0.25,18.6006006,133.002002,4,0
+948,312,10,10,4,4,07/08/2025,118,06/08/2025,fulfilled,Fulfilled,Consider,Electronics,32.41,0.09,4.4,Walker and Sons,Electronics,0.41,0.14,23.06206206,137.3863864,0,1
+949,312,19,3,5,5,07/08/2025,118,06/08/2025,fulfilled,Fulfilled,Manage,Medical,9.09,0.03,0.75,Miller-Torres,Medical,0.37,4.09,8.766766767,120.7347347,40,1
+950,312,15,6,2,2,07/08/2025,118,06/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+951,313,47,5,2,2,07/08/2025,184,06/08/2025,fulfilled,Fulfilled,Now,Electronics,24.94,0.43,3.35,Walsh-Phillips,Electronics,0.22,0.28,24.04004004,124.6366366,1,1
+952,313,15,6,4,4,07/08/2025,184,06/08/2025,fulfilled,Fulfilled,Republican,Clothing,14.57,0.25,5.32,Austin Inc,Clothing,0.12,3.08,22.28528529,110.8408408,2,1
+953,314,28,2,3,3,09/08/2025,38,06/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+954,314,44,10,2,2,09/08/2025,38,06/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+955,314,11,4,1,1,07/08/2025,38,06/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Young PLC,Hardware,0.45,0.61,24.16316316,136.5515516,0,1
+956,314,4,7,5,5,08/08/2025,38,06/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,Bennett Ltd,Food,0.02,1.27,2.811811812,281.0590591,345,1
+957,315,12,7,1,1,09/08/2025,17,06/08/2025,fulfilled,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,1
+958,315,26,5,2,2,09/08/2025,17,06/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walsh-Phillips,Electronics,0.22,0.28,24.73173173,121.4834835,1,1
+959,315,45,5,2,2,09/08/2025,17,06/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+960,315,2,1,1,1,08/08/2025,17,06/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+961,315,36,7,3,3,09/08/2025,17,06/08/2025,fulfilled,Fulfilled,Always,Food,25.32,0.13,0.48,Bennett Ltd,Food,0.02,1.27,5.623623624,154.1781782,216,1
+962,316,42,3,5,5,07/08/2025,148,06/08/2025,fulfilled,Fulfilled,There,Medical,13.57,0.06,2.64,Miller-Torres,Medical,0.37,4.09,22.48048048,94.84084084,0,1
+963,316,11,9,1,1,07/08/2025,148,06/08/2025,fulfilled,Fulfilled,Fast,Hardware,25.8,0.14,5.56,Greene Ltd,Hardware,0.12,3.58,23.02702703,101.5145145,1,1
+964,317,34,4,1,1,08/08/2025,126,06/08/2025,fulfilled,Fulfilled,Usually,Hardware,46.8,0.38,4.17,Young PLC,Hardware,0.45,0.61,24.57757758,122.0750751,0,1
+965,317,23,2,2,2,08/08/2025,126,06/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,1
+966,317,39,5,2,2,08/08/2025,126,06/08/2025,fulfilled,Fulfilled,Own,Electronics,43.68,0.04,1.5,Walsh-Phillips,Electronics,0.22,0.28,9.927927928,115.3823824,39,1
+967,318,12,7,4,4,07/08/2025,193,06/08/2025,partial - expired,Fulfilled,Reason,Food,14.88,0.17,4.63,Bennett Ltd,Food,0.02,1.27,21.82182182,114.8738739,6,0
+968,318,23,2,3,3,08/08/2025,193,06/08/2025,partial - expired,Fulfilled,Food,Food,38.79,0.39,2.11,"Moore, Bridges and Donaldson",Food,0.14,1.42,11.75075075,124.3653654,31,0
+969,318,48,5,5,1,13/08/2025,193,06/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0
+970,318,44,5,2,2,07/08/2025,193,06/08/2025,partial - expired,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,0
+971,319,32,2,4,4,07/08/2025,74,07/08/2025,fulfilled,Fulfilled,One,Food,39.46,0.07,2.9,"Moore, Bridges and Donaldson",Food,0.14,1.42,16.66966967,104.6556557,11,1
+972,319,1,9,5,5,11/08/2025,74,07/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+973,319,28,2,4,4,08/08/2025,74,07/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+974,319,44,5,5,5,09/08/2025,74,07/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walsh-Phillips,Electronics,0.22,0.28,25.94394394,107.3273273,0,1
+975,319,33,2,1,1,11/08/2025,74,07/08/2025,fulfilled,Fulfilled,List,Food,12.43,0.27,3.68,"Moore, Bridges and Donaldson",Food,0.14,1.42,24.62262262,110.8798799,0,1
+976,320,26,5,1,1,08/08/2025,185,07/08/2025,fulfilled,Fulfilled,Congress,Electronics,44.17,0.16,3.87,Walsh-Phillips,Electronics,0.22,0.28,24.73173173,121.4834835,1,1
+977,320,23,7,4,4,07/08/2025,185,07/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+978,321,27,7,1,1,09/08/2025,132,07/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+979,321,8,3,3,3,08/08/2025,132,07/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Miller-Torres,Medical,0.37,4.09,18.85585586,132.3273273,0,1
+980,322,1,4,2,2,07/08/2025,91,07/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Young PLC,Hardware,0.45,0.61,8.688688689,151.7237237,67,1
+981,322,23,7,1,1,08/08/2025,91,07/08/2025,fulfilled,Fulfilled,Food,Food,38.79,0.39,2.11,Bennett Ltd,Food,0.02,1.27,12.97297297,136.9399399,21,1
+982,322,46,3,4,4,09/08/2025,91,07/08/2025,fulfilled,Fulfilled,Face,Medical,13.26,0.24,5.26,Miller-Torres,Medical,0.37,4.09,25.09309309,118.3723724,0,1
+983,322,13,10,3,3,08/08/2025,91,07/08/2025,fulfilled,Fulfilled,Serious,Electronics,15.31,0.03,1.96,Walker and Sons,Electronics,0.41,0.14,17.34434434,97.03003003,0,1
+984,323,43,8,5,5,08/08/2025,51,07/08/2025,fulfilled,Fulfilled,Decision,Medical,23.5,0.43,0.42,Carlson LLC,Medical,0.33,3.32,5.418418418,217.1731732,249,1
+985,323,18,8,2,2,09/08/2025,51,07/08/2025,fulfilled,Fulfilled,Of,Medical,21.29,0.5,0.92,Carlson LLC,Medical,0.33,3.32,6.78978979,218.4824825,80,1
+986,323,8,8,4,4,07/08/2025,51,07/08/2025,fulfilled,Fulfilled,Occur,Medical,17.51,0.32,2.25,Carlson LLC,Medical,0.33,3.32,17.35535536,115.9139139,1,1
+987,323,27,7,2,2,08/08/2025,51,07/08/2025,fulfilled,Fulfilled,No,Food,13.95,0.19,1.05,Bennett Ltd,Food,0.02,1.27,5.408408408,140.8808809,108,1
+988,324,1,9,4,4,14/08/2025,89,07/08/2025,fulfilled,Fulfilled,Quickly,Hardware,36.42,0.18,1.02,Greene Ltd,Hardware,0.12,3.58,5.096096096,190.5425425,172,1
+989,324,50,3,4,4,18/08/2025,89,07/08/2025,fulfilled,Fulfilled,Sell,Medical,26.66,0.43,5.42,Miller-Torres,Medical,0.37,4.09,26.24424424,130.9019019,0,1
+990,324,44,10,3,3,08/08/2025,89,07/08/2025,fulfilled,Fulfilled,Hand,Electronics,7.73,0.37,4.82,Walker and Sons,Electronics,0.41,0.14,23.49049049,109.8748749,1,1
+991,324,16,8,4,4,12/08/2025,89,07/08/2025,fulfilled,Fulfilled,Long,Medical,11.43,0.08,4.5,Carlson LLC,Medical,0.33,3.32,20.34234234,141.5995996,8,1
+992,324,4,2,4,4,07/08/2025,89,07/08/2025,fulfilled,Fulfilled,Reality,Food,10.62,0.46,0.56,"Moore, Bridges and Donaldson",Food,0.14,1.42,5.365365365,165.4264264,184,1
+993,325,45,5,2,2,08/08/2025,181,07/08/2025,fulfilled,Fulfilled,Paper,Electronics,16.19,0.1,2.75,Walsh-Phillips,Electronics,0.22,0.28,17.01001001,119.3033033,10,1
+994,326,28,2,1,1,08/08/2025,50,07/08/2025,fulfilled,Fulfilled,Officer,Food,46.33,0.3,2.98,"Moore, Bridges and Donaldson",Food,0.14,1.42,17.27727728,129.1091091,10,1
+995,326,2,1,4,4,10/08/2025,50,07/08/2025,fulfilled,Fulfilled,Dog,Clothing,9.6,0.2,2.22,Perez PLC,Clothing,0.32,0.25,13.16316316,143.5375375,22,1
+996,327,50,8,5,5,11/08/2025,4,07/08/2025,partial - expired,Fulfilled,Sell,Medical,26.66,0.43,5.42,Carlson LLC,Medical,0.33,3.32,24.2002002,144.4054054,0,0
+997,327,9,6,2,2,09/08/2025,4,07/08/2025,partial - expired,Fulfilled,Various,Clothing,20.99,0.34,4.24,Austin Inc,Clothing,0.12,3.08,23.08508509,98.34334334,2,0
+998,327,22,7,2,2,10/08/2025,4,07/08/2025,partial - expired,Fulfilled,Well,Food,43.74,0.02,4.35,Bennett Ltd,Food,0.02,1.27,21.5015015,124.4054054,6,0
+999,327,24,6,1,1,12/08/2025,4,07/08/2025,partial - expired,Fulfilled,However,Clothing,24.56,0.23,5.73,Austin Inc,Clothing,0.12,3.08,24.06606607,100.4874875,1,0
+1000,327,48,5,2,0,NA,4,07/08/2025,partial - expired,Failed,Agent,Electronics,34.35,0.27,0.19,Walsh-Phillips,Electronics,0.22,0.28,0.367367367,722.5815816,843,0

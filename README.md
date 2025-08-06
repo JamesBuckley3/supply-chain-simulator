@@ -1,167 +1,179 @@
-Supply Chain Simulator
-======================
+# Supply Chain Simulator
 
-Project Overview
-----------------
+## Project Overview
 
-The Supply Chain Simulator is a Python-based project designed to simulate the dynamic behavior of a supply chain, including order generation, inventory management, and fulfillment processes. The simulation interacts with a PostgreSQL database to store and manage supply chain entities and their states. The primary goal of this project is to generate realistic supply chain data that can be analysed to understand fulfillment rates and identify factors contributing to unfulfilled or partially unfulfilled customer orders.
+The **Supply Chain Simulator** is a Python and R project that simulates realistic supply chain behavior—including customer ordering, supplier fulfillment, inventory tracking, and restocking logic. It interfaces with a PostgreSQL database to manage the state of all core entities.
+
+The simulation generates detailed logs and inventory records, which are exported to CSV and used for **data-driven diagnostics** on fulfillment performance.
 
 ### Key Features:
 
-Key Features:
+- **Database Schema**: PostgreSQL schema with normalised tables for items, customers, suppliers, orders, order items, and inventory.
+- **Synthetic Data**: Uses `Faker` to generate semi-realistic data, enhanced by parameterised failure rates and restocking logic.
+- **Event-Driven Simulation**: Simulates core supply chain events such as order creations, fulfillment attempts and restocks across thousands of iterations.
+- **Data Persistence**: All entity states and transitions are stored in a relational database.
+- **CSV Export**: Key simulation outputs (`inventory_history.csv`, `fulfillment_log.csv`) exported for downstream analysis.
 
-- **Database Schema**: PostgreSQL setup with tables for core supply chain entities (items, customers, suppliers, inventory, orders).
+---
 
-- **Synthetic Data**: Realistic mock data generation for entities using Faker, including dynamic attributes like failure rates and weights.
+## Analytical Objective
 
-- **Dynamic Simulation**: Simulates key supply chain events: order creation, fulfillment, inventory restocking, and order expiration.
+> **How many customer orders go partially or fully unfulfilled — and what inventory or supplier-related factors are driving these failures?**
 
-- **Data Persistence**: Manages and updates all simulation activities and entity states within a PostgreSQL database.
+This project uses simulation to create a rich dataset of fulfillment outcomes and inventory dynamics. These are then analysed to understand:
+- What causes fulfillment success or failure
+- How inventory levels and supplier/item configurations influence performance
+- Which supplier–item combinations are most vulnerable
 
-- **Data Export**: Exports inventory history and order fulfillment logs to CSV for analysis.
+---
 
-Analytical Objective
---------------------
-
-The core analytical question this simulator aims to help answer is:
-
-**"How many customer orders go partially or fully unfulfilled - and what inventory or supplier-related factors are driving these failures?"**
-
-By capturing granular data on order fulfillment attempts, inventory levels, supplier performance, and item characteristics, this simulation provides a rich dataset for investigating the root causes of supply chain disruptions and inefficiencies.
-
-Project Structure
------------------
+## Project Structure
 
 <pre>
 ├── README.md
 ├── METHODOLOGY.md
+├── LICENSE.txt
+├── eda_baseline.ipynb
+├── analysis_modelling.ipynb
 ├── config.py
 ├── database.py
+├── models.py
 ├── data_generator.py
 ├── db_loader.py
-├── main.py
-├── models.py
 ├── simulation.py
-├── LICENSE.txt
+├── main.py
 ├── .gitignore
 ├── images/
-│   └── erd.png
+│ └── erd.png
+├── data/
+│   └── (sample CSVs and simulation outputs)
 └── sql/
-    ├── create_tables.sql
-    ├── clear_data.sql
-    ├── drop_tables.sql
-    └── integrity_tests.sql
+  └── create_tables.sql
+  └── clear_data.sql
+  └── drop_tables.sql
+  └── integrity_tests.sql
+  └── basic_eda.sql
 </pre>
 
-Setup and Installation
-----------------------
 
-To get this project up and running, follow these steps:
+---
 
-### 1\. Prerequisites
+## Setup and Installation
 
--   **Python 3.x**
+### 1. Prerequisites
 
--   **PostgreSQL**: Ensure you have a PostgreSQL server installed and running.
+- Python 3.x
+- PostgreSQL
+- pip (Python package installer)
 
--   `pip`: Python package installer.
+### 2. Clone the Repository
 
-### 2\. Clone the Repository
-
-```bash 
-git clone https://github.com/your-username/supply-chain-simulator.git\
+```bash
+git clone https://github.com/JamesBuckley3/supply-chain-simulator.git
 cd supply-chain-simulator
 ```
 
-### 3\. Set up Python Environment
-
-It's recommended to use a virtual environment:
+### 3. Set Up Python Environment
 
 ```bash
-python -m venv venv\
-source venv/bin/activate  # On Windows: `venv\Scripts\activate`\
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-`requirements.txt` content:
+Contents of `requirements.txt`:
 
-```bash
-psycopg2-binary\
-Faker\
-python-dotenv\
-pandas\
+```txt
+psycopg2-binary
+Faker
+python-dotenv
+pandas
 matplotlib
 ```
 
-### 4\. Configure Database Connection
+### 4. Configure Database Connection
 
-Create a `.env` file in the root directory of the project with your PostgreSQL credentials:
+Create a .env file in the root directory:
 
-```.env
-DB_NAME=supply_chain_sim\
-DB_USER=your_postgres_user\
-DB_PASS=your_postgres_password\
-DB_HOST=localhost\
+```env
+DB_NAME=supply_chain_sim
+DB_USER=your_postgres_user
+DB_PASS=your_postgres_password
+DB_HOST=localhost
 DB_PORT=5432
 ```
 
--   `DB_NAME`: (Optional) Defaults to `supply_chain_sim`.
+### 5. Set Up the Database
 
--   `DB_HOST`: (Optional) Defaults to `localhost`.
-
--   `DB_PORT`: (Optional) Defaults to `5432`.
-
-### 5\. Create Database and Tables
-
-First, ensure your PostgreSQL server is running. Then, connect to your PostgreSQL instance (e.g., using `psql`) and create the database specified in your `.env` file (e.g., `supply_chain_sim`).
-
-Once the database is created, run the `create_tables.sql` script to set up the necessary tables:
+Run the SQL schema setup:
 
 ```bash
-psql -U your_postgres_user -d supply_chain_sim -f create_tables.sql
+psql -U your_postgres_user -d supply_chain_sim -f sql/create_tables.sql
 ```
 
-Running the Simulation
-----------------------
+## Running the Simulation
 
-After setting up the database and installing dependencies, you can run the simulation:
-
+Run the main script:
 ```bash
 python main.py
 ```
 
-The `main.py` script will:
+This will:
 
-1.  Connect to the PostgreSQL database.
+- Generate synthetic data for suppliers, items, customers, and initial inventory
 
-2.  Generate synthetic data for suppliers, items, customers, and initial inventory.
+- Simulate 100k+ (or however many you choose) order fulfillment iterations
 
-3.  Load this data into the database.
+- Log fulfillment attempts and inventory states
 
-4.  Run the simulation for a specified number of iterations (default: 100,000 steps).
+- Export:
 
-5.  Periodically update order statuses and log inventory snapshots and fulfillment attempts.
+    - `fulfillment_log.csv`
 
-6.  Export `inventory_history.csv` and `fulfillment_log.csv` to the project root directory upon completion.
+    - `inventory_history.csv`
 
-Analysing the Data
-------------------
+    - `simulation_config.json`
 
-Once the simulation completes, two CSV files will be generated:
+## Analysing the Data
 
--   `inventory_history.csv`: Contains snapshots of inventory levels over time, along with associated item and supplier weights.
+The exported CSVs enable powerful diagnostic analytics.
+### Exploratory Analysis (eda_baseline.ipynb)
 
--   `fulfillment_log.csv`: Details each order fulfillment attempt, including success/failure status and reasons for failure.
+- Visualised fulfillment outcomes by status (fully, partially, unfulfilled)
 
-You can use these CSVs for your data analysis. I will be performing my own data analysis which will be included in the next commit.
+- Analysed time trends and supplier-level fulfillment patterns
 
+- Created boxplots of config parameters (failure rates, restock weights)
 
-Contributing
-------------
+### Modeling and Diagnostics (analysis_modelling.ipynb)
 
-Feel free to fork this repository, open issues, or submit pull requests.
+- Merged simulation config with fulfillment logs and inventory history
 
-License
--------
+- Computed:
 
-This project is open-sourced under the MIT License.
+    - `avg_quantity_on_hand `(critical inventory metric)
+
+    - `avg_fulfilled_rate` (by supplier–item pair)
+
+- Built regression models:
+
+    - Found `avg_quantity_on_hand` is the strongest predictor of fulfillment
+
+    - Identified `item_restock_weight` and `stockouts` as key drivers of inventory levels
+
+    - Used linear regression, polynomial models, and random forests for interpretability
+
+Causal Flow Confirmed:
+
+```nginx
+item_restock_weight ↑  →  avg_quantity_on_hand ↑  →  avg_fulfilled_rate ↑
+        stockouts ↑    →  avg_quantity_on_hand ↓  →  avg_fulfilled_rate ↓
+```
+
+## Contributing
+
+I welcome contributions! Feel free to fork, open issues, or submit pull requests.
+
+## License
+
+Licensed under the MIT License.

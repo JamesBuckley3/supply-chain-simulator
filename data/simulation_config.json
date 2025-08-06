@@ -1,0 +1,419 @@
+{
+    "suppliers": {
+        "1": {
+            "name": "Perez PLC",
+            "category": "Clothing",
+            "failure_rate": 0.32,
+            "fulfillment_weight": 0.25
+        },
+        "2": {
+            "name": "Moore, Bridges and Donaldson",
+            "category": "Food",
+            "failure_rate": 0.14,
+            "fulfillment_weight": 1.42
+        },
+        "3": {
+            "name": "Miller-Torres",
+            "category": "Medical",
+            "failure_rate": 0.37,
+            "fulfillment_weight": 4.09
+        },
+        "4": {
+            "name": "Young PLC",
+            "category": "Hardware",
+            "failure_rate": 0.45,
+            "fulfillment_weight": 0.61
+        },
+        "5": {
+            "name": "Walsh-Phillips",
+            "category": "Electronics",
+            "failure_rate": 0.22,
+            "fulfillment_weight": 0.28
+        },
+        "6": {
+            "name": "Austin Inc",
+            "category": "Clothing",
+            "failure_rate": 0.12,
+            "fulfillment_weight": 3.08
+        },
+        "7": {
+            "name": "Bennett Ltd",
+            "category": "Food",
+            "failure_rate": 0.02,
+            "fulfillment_weight": 1.27
+        },
+        "8": {
+            "name": "Carlson LLC",
+            "category": "Medical",
+            "failure_rate": 0.33,
+            "fulfillment_weight": 3.32
+        },
+        "9": {
+            "name": "Greene Ltd",
+            "category": "Hardware",
+            "failure_rate": 0.12,
+            "fulfillment_weight": 3.58
+        },
+        "10": {
+            "name": "Walker and Sons",
+            "category": "Electronics",
+            "failure_rate": 0.41,
+            "fulfillment_weight": 0.14
+        }
+    },
+    "items": {
+        "1": {
+            "name": "Quickly",
+            "category": "Hardware",
+            "unit_price": 36.42,
+            "failure_rate": 0.18,
+            "restock_weight": 1.02
+        },
+        "2": {
+            "name": "Dog",
+            "category": "Clothing",
+            "unit_price": 9.6,
+            "failure_rate": 0.2,
+            "restock_weight": 2.22
+        },
+        "3": {
+            "name": "Throw",
+            "category": "Clothing",
+            "unit_price": 32.17,
+            "failure_rate": 0.41,
+            "restock_weight": 4.41
+        },
+        "4": {
+            "name": "Reality",
+            "category": "Food",
+            "unit_price": 10.62,
+            "failure_rate": 0.46,
+            "restock_weight": 0.56
+        },
+        "5": {
+            "name": "Party",
+            "category": "Clothing",
+            "unit_price": 42.32,
+            "failure_rate": 0.31,
+            "restock_weight": 5.18
+        },
+        "6": {
+            "name": "Risk",
+            "category": "Food",
+            "unit_price": 13.65,
+            "failure_rate": 0.04,
+            "restock_weight": 4.0
+        },
+        "7": {
+            "name": "Left",
+            "category": "Clothing",
+            "unit_price": 49.33,
+            "failure_rate": 0.43,
+            "restock_weight": 5.21
+        },
+        "8": {
+            "name": "Occur",
+            "category": "Medical",
+            "unit_price": 17.51,
+            "failure_rate": 0.32,
+            "restock_weight": 2.25
+        },
+        "9": {
+            "name": "Various",
+            "category": "Clothing",
+            "unit_price": 20.99,
+            "failure_rate": 0.34,
+            "restock_weight": 4.24
+        },
+        "10": {
+            "name": "Consider",
+            "category": "Electronics",
+            "unit_price": 32.41,
+            "failure_rate": 0.09,
+            "restock_weight": 4.4
+        },
+        "11": {
+            "name": "Fast",
+            "category": "Hardware",
+            "unit_price": 25.8,
+            "failure_rate": 0.14,
+            "restock_weight": 5.56
+        },
+        "12": {
+            "name": "Reason",
+            "category": "Food",
+            "unit_price": 14.88,
+            "failure_rate": 0.17,
+            "restock_weight": 4.63
+        },
+        "13": {
+            "name": "Serious",
+            "category": "Electronics",
+            "unit_price": 15.31,
+            "failure_rate": 0.03,
+            "restock_weight": 1.96
+        },
+        "14": {
+            "name": "Civil",
+            "category": "Clothing",
+            "unit_price": 7.98,
+            "failure_rate": 0.46,
+            "restock_weight": 3.45
+        },
+        "15": {
+            "name": "Republican",
+            "category": "Clothing",
+            "unit_price": 14.57,
+            "failure_rate": 0.25,
+            "restock_weight": 5.32
+        },
+        "16": {
+            "name": "Long",
+            "category": "Medical",
+            "unit_price": 11.43,
+            "failure_rate": 0.08,
+            "restock_weight": 4.5
+        },
+        "17": {
+            "name": "How",
+            "category": "Food",
+            "unit_price": 16.82,
+            "failure_rate": 0.3,
+            "restock_weight": 5.4
+        },
+        "18": {
+            "name": "Of",
+            "category": "Medical",
+            "unit_price": 21.29,
+            "failure_rate": 0.5,
+            "restock_weight": 0.92
+        },
+        "19": {
+            "name": "Manage",
+            "category": "Medical",
+            "unit_price": 9.09,
+            "failure_rate": 0.03,
+            "restock_weight": 0.75
+        },
+        "20": {
+            "name": "Box",
+            "category": "Hardware",
+            "unit_price": 40.64,
+            "failure_rate": 0.22,
+            "restock_weight": 0.47
+        },
+        "21": {
+            "name": "Hard",
+            "category": "Medical",
+            "unit_price": 31.81,
+            "failure_rate": 0.24,
+            "restock_weight": 1.58
+        },
+        "22": {
+            "name": "Well",
+            "category": "Food",
+            "unit_price": 43.74,
+            "failure_rate": 0.02,
+            "restock_weight": 4.35
+        },
+        "23": {
+            "name": "Food",
+            "category": "Food",
+            "unit_price": 38.79,
+            "failure_rate": 0.39,
+            "restock_weight": 2.11
+        },
+        "24": {
+            "name": "However",
+            "category": "Clothing",
+            "unit_price": 24.56,
+            "failure_rate": 0.23,
+            "restock_weight": 5.73
+        },
+        "25": {
+            "name": "Choose",
+            "category": "Clothing",
+            "unit_price": 48.73,
+            "failure_rate": 0.38,
+            "restock_weight": 3.1
+        },
+        "26": {
+            "name": "Congress",
+            "category": "Electronics",
+            "unit_price": 44.17,
+            "failure_rate": 0.16,
+            "restock_weight": 3.87
+        },
+        "27": {
+            "name": "No",
+            "category": "Food",
+            "unit_price": 13.95,
+            "failure_rate": 0.19,
+            "restock_weight": 1.05
+        },
+        "28": {
+            "name": "Officer",
+            "category": "Food",
+            "unit_price": 46.33,
+            "failure_rate": 0.3,
+            "restock_weight": 2.98
+        },
+        "29": {
+            "name": "Know",
+            "category": "Electronics",
+            "unit_price": 46.81,
+            "failure_rate": 0.44,
+            "restock_weight": 5.01
+        },
+        "30": {
+            "name": "Source",
+            "category": "Clothing",
+            "unit_price": 15.78,
+            "failure_rate": 0.13,
+            "restock_weight": 3.45
+        },
+        "31": {
+            "name": "During",
+            "category": "Electronics",
+            "unit_price": 8.85,
+            "failure_rate": 0.25,
+            "restock_weight": 0.51
+        },
+        "32": {
+            "name": "One",
+            "category": "Food",
+            "unit_price": 39.46,
+            "failure_rate": 0.07,
+            "restock_weight": 2.9
+        },
+        "33": {
+            "name": "List",
+            "category": "Food",
+            "unit_price": 12.43,
+            "failure_rate": 0.27,
+            "restock_weight": 3.68
+        },
+        "34": {
+            "name": "Usually",
+            "category": "Hardware",
+            "unit_price": 46.8,
+            "failure_rate": 0.38,
+            "restock_weight": 4.17
+        },
+        "35": {
+            "name": "Bit",
+            "category": "Clothing",
+            "unit_price": 22.95,
+            "failure_rate": 0.34,
+            "restock_weight": 2.3
+        },
+        "36": {
+            "name": "Always",
+            "category": "Food",
+            "unit_price": 25.32,
+            "failure_rate": 0.13,
+            "restock_weight": 0.48
+        },
+        "37": {
+            "name": "Style",
+            "category": "Electronics",
+            "unit_price": 31.47,
+            "failure_rate": 0.12,
+            "restock_weight": 1.4
+        },
+        "38": {
+            "name": "Agreement",
+            "category": "Electronics",
+            "unit_price": 36.85,
+            "failure_rate": 0.04,
+            "restock_weight": 0.5
+        },
+        "39": {
+            "name": "Own",
+            "category": "Electronics",
+            "unit_price": 43.68,
+            "failure_rate": 0.04,
+            "restock_weight": 1.5
+        },
+        "40": {
+            "name": "Traditional",
+            "category": "Medical",
+            "unit_price": 14.64,
+            "failure_rate": 0.07,
+            "restock_weight": 5.62
+        },
+        "41": {
+            "name": "Ready",
+            "category": "Food",
+            "unit_price": 30.93,
+            "failure_rate": 0.13,
+            "restock_weight": 2.89
+        },
+        "42": {
+            "name": "There",
+            "category": "Medical",
+            "unit_price": 13.57,
+            "failure_rate": 0.06,
+            "restock_weight": 2.64
+        },
+        "43": {
+            "name": "Decision",
+            "category": "Medical",
+            "unit_price": 23.5,
+            "failure_rate": 0.43,
+            "restock_weight": 0.42
+        },
+        "44": {
+            "name": "Hand",
+            "category": "Electronics",
+            "unit_price": 7.73,
+            "failure_rate": 0.37,
+            "restock_weight": 4.82
+        },
+        "45": {
+            "name": "Paper",
+            "category": "Electronics",
+            "unit_price": 16.19,
+            "failure_rate": 0.1,
+            "restock_weight": 2.75
+        },
+        "46": {
+            "name": "Face",
+            "category": "Medical",
+            "unit_price": 13.26,
+            "failure_rate": 0.24,
+            "restock_weight": 5.26
+        },
+        "47": {
+            "name": "Now",
+            "category": "Electronics",
+            "unit_price": 24.94,
+            "failure_rate": 0.43,
+            "restock_weight": 3.35
+        },
+        "48": {
+            "name": "Agent",
+            "category": "Electronics",
+            "unit_price": 34.35,
+            "failure_rate": 0.27,
+            "restock_weight": 0.19
+        },
+        "49": {
+            "name": "Court",
+            "category": "Electronics",
+            "unit_price": 46.69,
+            "failure_rate": 0.43,
+            "restock_weight": 1.08
+        },
+        "50": {
+            "name": "Sell",
+            "category": "Medical",
+            "unit_price": 26.66,
+            "failure_rate": 0.43,
+            "restock_weight": 5.42
+        }
+    },
+    "config": {
+        "seed": 42
+    }
+}

@@ -1,7 +1,7 @@
 Methodology
 ===========
 
-The simulation operates on a discrete-event, time-based model, progressing through a series of random events over a specified number of iterations.
+The simulation operates on a discrete-event, time-based model, progressing through a series of random but weighted events over a specified number of iterations. From there data is exported for analysis and visualisation.
 
 1.  **Initialisation**:
 
@@ -26,7 +26,7 @@ The simulation operates on a discrete-event, time-based model, progressing throu
 
         -   **Order Fulfillment**: The system attempts to fulfill a randomly selected unfulfilled item from an existing order. Fulfillment success depends on supplier reliability (failure rate) and available `Inventory`. If successful, `QUANTITY_ON_HAND` in `INVENTORY` is reduced, `FULFILLED_QUANTITY` in `ORDER_ITEMS` is updated, and the overall `ORDER_STATUS` is adjusted (e.g., to 'partial' or 'fulfilled').
 
-        -   **Inventory Restocking**: For items whose `QUANTITY_ON_HAND` falls below their `REORDER_POINT`, a restock event is triggered. The restock amount is influenced by item-specific restock weights and supplier maximum quantities, updating the `INVENTORY` table.
+        -   **Inventory Restocking**: Items whose `QUANTITY_ON_HAND` falls below their `REORDER_POINT` become eligible for restocking. The restock chance for each item is influenced by their restock weight and if chosen their quantity is restocked to the suppliers maximum quantity, updating the `INVENTORY` table.
 
         -   **Idle**: No specific action occurs, representing periods of inactivity.
 
@@ -42,10 +42,103 @@ The simulation operates on a discrete-event, time-based model, progressing throu
 
         -   Recent fulfillment attempts are flushed from a temporary buffer to the main `order_fulfillment_log`.
 
-        -   A snapshot of the current `Inventory` state, including `QUANTITY_ON_HAND`, `restock_weight`, `fulfillment_weight`, and `backlog_unfulfilled_qty`, is recorded in `inventory_history`.
+        -   A snapshot of the current `Inventory` state, including `QUANTITY_ON_HAND` and `backlog_unfulfilled_qty` are recorded in `inventory_history`.
 
         -   Database changes are committed.
 
 4.  **Data Export**:
 
     -   Upon completion of all iterations, the accumulated `inventory_history` and `order_fulfillment_log` are exported to `inventory_history.csv` and `fulfillment_log.csv` files, respectively. These CSVs provide a comprehensive dataset for subsequent analysis.
+
+5.  **Basic EDA**:
+
+    Data Loading & Glimpse: Imported main files (orders, order_items, inventory_history, etc.) and examined data types and distributions.
+
+    **Visualisations**:
+    - Order Status Breakdown
+
+    - Fulfillment Outcome Breakdown
+
+    - Fulfillment Attempt Success
+
+    These steps laid the groundwork for deeper modeling by highlighting patterns and failure modes.
+
+6. **Modelling and Deeper Analysis**:
+
+    **A. Data Preparation**
+
+    Created `order_item_final` with enriched fields:
+
+    - `avg_quantity_on_hand`, `avg_backlog`, `stockouts`
+
+    - Item and supplier configuration parameters from `simulation_config.json`
+
+    - Binary indicator `fulfilled_binary`
+
+    Reduced to **supplier–item pairs**, aggregated across orders:
+
+    - Dropped irrelevant columns (IDs, dates, statuses)
+
+    - Grouped by `supplier_id` & `item_id`
+
+    - Averaged numeric columns using `dplyr::summarise(across(...))`
+
+    **B. Modeling Fulfillment Rate vs. Inventory**
+
+    **Linear regression**:
+
+    `avg_fulfilled_rate ~ avg_quantity_on_hand`
+
+    - Strong positive coefficient (p ≈ 5e‑9), **R² ≈ 0.30**
+
+    - Residuals well-behaved; uplifting model baseline.
+
+    - Confirmed inventory’s critical role in fulfillment outcomes.
+
+    **C. Modeling Inventory via Config & Dynamics**
+
+    - **Full linear model**:
+
+        - Predictors: `item_failure_rate`, `item_restock_weight`, `supplier_failure_rate`, `supplier_fulfillment_weight`, `avg_backlog`, `stockouts`
+
+        - **Key findings**:
+
+            - `item_restock_weight`: strongest predictor (p < 2e‑16)
+
+            - `stockouts`: strong negative relation (p < 2e‑5)
+
+            - `avg_backlog`: mild positive effect (p ≈ 0.025)
+
+            - Supplier params mostly non-significant
+
+        - **Model fit**: R² ≈ 0.91
+
+    - **Polynomial model** (degree 2):
+
+        - Nonlinear component of `item_restock_weight` significant
+
+        - R² improved to ≈ 0.94, residual SD reduced
+
+    - **Random Forest**:
+
+        - Confirmed variable importance:
+
+            1. `item_restock_weight`
+
+            2. `stockouts`
+
+            3. `avg_backlog`
+
+        - Supplier-level parameters had marginal importance
+
+    These results demonstrate that **item-level restock logic and dynamic metrics (stockouts/backlog)** are the principal drivers of inventory, explaining subsequent fulfillment outcomes.
+
+**7. Key Insights & Causal Flow**
+
+- **Causal sequence established**:
+    - `item_restock_weight` ↑ → `avg_quantity_on_hand` ↑ → `avg_fulfilled_rate` ↑
+    - Conversely: `stockouts` ↑ → `avg_quantity_on_hand` ↓ → `fulfillment` ↓
+
+- **Supplier-level config parameters** (failure rate, fulfillment weight) are less predictive than item dynamics.
+
+- **Intervention focus**: tuning item-level restocking strategy and managing stockouts/backlogs will yield better fulfillment performance.
