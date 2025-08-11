@@ -4,7 +4,7 @@
 
 The **Supply Chain Simulator** is a Python and R project that simulates realistic supply chain behavior—including customer ordering, supplier fulfillment, inventory tracking, and restocking logic. It interfaces with a PostgreSQL database to manage the state of all core entities.
 
-The simulation generates detailed logs and inventory records, which are exported to CSV and used for **data-driven diagnostics** on fulfillment performance.
+The simulation generates detailed logs and inventory records, which are exported to CSV and used for **data-driven diagnostics** and **visualisations** on fulfillment performance.
 
 ### Key Features:
 
@@ -13,6 +13,7 @@ The simulation generates detailed logs and inventory records, which are exported
 - **Event-Driven Simulation**: Simulates core supply chain events such as order creations, fulfillment attempts and restocks across thousands of iterations.
 - **Data Persistence**: All entity states and transitions are stored in a relational database.
 - **CSV Export**: Key simulation outputs (`inventory_history.csv`, `fulfillment_log.csv`) exported for downstream analysis.
+- **Analysis and Visualisation**: Identifying and displaying the causal chain that is most predictive of order and order item failures.
 
 ---
 
@@ -169,6 +170,9 @@ Causal Flow Confirmed:
 item_restock_weight ↑  →  avg_quantity_on_hand ↑  →  avg_fulfilled_rate ↑
         stockouts ↑    →  avg_quantity_on_hand ↓  →  avg_fulfilled_rate ↓
 ```
+
+![Decomposition Tree Analysis](images/decomposition_tree.png)
+*Decomposition tree page from `fulfillment_dashboard.pbix` showing relationships between inventory metrics and fulfillment rates.*
 
 ## Contributing
 

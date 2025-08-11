@@ -142,3 +142,23 @@ The simulation operates on a discrete-event, time-based model, progressing throu
 - **Supplier-level config parameters** (failure rate, fulfillment weight) are less predictive than item dynamics.
 
 - **Intervention focus**: tuning item-level restocking strategy and managing stockouts/backlogs will yield better fulfillment performance.
+
+**8. Power BI Visualisations**
+
+The processed datasets (`order_item_final` and `supplier_item_df`) were loaded into Power BI Desktop for interactive exploration and storytelling of the causal chains identified in modelling. Three main report pages were developed:
+
+**A. Scatter Chart Analysis Pages**
+- Three separate scatter charts exploring different variable pairings.
+- Each chart includes a brief text description below, highlighting notable patterns in the data.
+- Three list slicers (`Supplier`, `Item Name`, `Item Category`) allow filtering across all charts for targeted exploration.
+
+**B. Decomposition Tree Page**
+- Visual breakdown of `avg_fulfilled_rate` by key influencing factors (`avg_quantity_on_hand`, `item_restock_weight`, `stockouts`).
+- Supports drilling down through the causal chain to understand variable contributions.
+- Linked interactions with a companion scatter chart enable detail filtering when nodes are selected.
+
+**C. Tooltip Page**
+- Contains six dynamic KPI cards (e.g., `Supplier`, `Item Name`, `Item Restock Weight`, `Stockouts`) that display context-specific details.
+- These KPIs are triggered when hovering over data points in scatter charts on the previous pages, giving instant contextual insight without cluttering the main visuals.
+
+The combination of scatter plots for pattern recognition, decomposition trees for causal explanation, and contextual tooltips for detail-on-demand creates a cohesive, interactive analytical experience that complements the statistical modelling.
